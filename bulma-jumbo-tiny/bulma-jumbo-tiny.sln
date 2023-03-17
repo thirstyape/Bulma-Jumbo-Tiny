@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33424.131
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "bulma-jumbo-tiny", "bulma-jumbo-tiny\bulma-jumbo-tiny.csproj", "{0C7D8AB0-4F46-4217-928B-5D22FBCE9D23}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0C7D8AB0-4F46-4217-928B-5D22FBCE9D23}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0C7D8AB0-4F46-4217-928B-5D22FBCE9D23}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0C7D8AB0-4F46-4217-928B-5D22FBCE9D23}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0C7D8AB0-4F46-4217-928B-5D22FBCE9D23}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1BD8050A-105F-45F2-98CD-E90CD0819252}
+	EndGlobalSection
+EndGlobal
