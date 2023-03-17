@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.BlazorWebAssembly">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="BuildWebCompiler" Version="1.12.405" />
+    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="6.0.10" />
+    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer" Version="6.0.10" PrivateAssets="all" />
+  </ItemGroup>
+
+	<ItemGroup>
+		<Content Include="..\..\bulma\bulma*.sass" Link="Sass\bulma\%(RecursiveDir)\%(Filename)%(Extension)" />
+		<Content Include="..\..\bulma\sass\**" Link="Sass\bulma\%(RecursiveDir)\%(Filename)%(Extension)" />
+		<Content Include="..\..\sass\**" Link="Sass\bulma-jumbo-tiny\%(RecursiveDir)\%(Filename)%(Extension)" />
+	</ItemGroup>
+
+</Project>
