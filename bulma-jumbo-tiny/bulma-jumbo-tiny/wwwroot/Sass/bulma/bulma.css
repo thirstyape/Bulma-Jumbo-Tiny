@@ -10280,3 +10280,31 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
   background-color: hsl(0deg, 0%, 98%);
   padding: 3rem 1.5rem 6rem;
 }
+
+.is-tiny .button,
+.is-tiny .delete {
+  font-size: 0.75rem;
+}
+.is-tiny .icon {
+  height: 1rem;
+  width: 1rem;
+}
+.is-tiny .progress,
+.is-tiny .title,
+.is-tiny .subtitle {
+  font-size: 0.75rem;
+}
+
+.is-jumbo .button,
+.is-jumbo .delete {
+  font-size: 1.5rem;
+}
+.is-jumbo .icon {
+  height: 3rem;
+  width: 3rem;
+}
+.is-jumbo .progress,
+.is-jumbo .title,
+.is-jumbo .subtitle {
+  font-size: 3rem;
+}
