@@ -1,8 +1,41 @@
 @import '../bulma/sass/utilities/derived-variables.sass'
 @import 'variables'
 
-.button
+.button,
+.title,
+.subtitle,
+.message 
   &.is-tiny
     font-size: $size-tiny
   &.is-jumbo
     font-size: $size-jumbo
+
+.delete
+  &.is-tiny
+    height: $height-tiny
+    max-height: $max-height-tiny
+    max-width: $max-width-tiny
+    min-height: $min-height-tiny
+    min-width: $min-width-tiny
+    width: $width-tiny
+  &.is-jumbo
+    height: $height-jumbo
+    max-height: $max-height-jumbo
+    max-width: $max-width-jumbo
+    min-height: $min-height-jumbo
+    min-width: $min-width-jumbo
+    width: $width-jumbo
+
+.icon
+  &.is-tiny
+    height: $icon-dimensions-tiny
+    width: $icon-dimensions-tiny
+  &.is-jumbo
+    height: $icon-dimensions-jumbo
+    width: $icon-dimensions-jumbo
+
+.progress
+  &.is-tiny
+    height: $size-tiny
+  &.is-jumbo
+    height: $size-jumbo

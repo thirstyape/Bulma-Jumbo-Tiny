@@ -8,9 +8,42 @@
 
 <div class="">
     <button class="button is-tiny" @onclick="IncrementCount">Click me</button>
+    <button class="delete is-tiny" @onclick="IncrementCount"></button>
+    <span class="icon is-tiny">
+        <i class="fas fa-home"></i>
+    </span>
+    <progress class="progress is-tiny" value="20" max="100">20%</progress>
+    <h1 class="title is-tiny">Title 1</h1>
+    <h1 class="subtitle is-tiny">Subtitle 1</h1>
+    <article class="message is-tiny">
+        <div class="message-header">
+            <p>Small message</p>
+            <button class="delete is-tiny" aria-label="delete"></button>
+        </div>
+        <div class="message-body">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta nec nulla.Nullam gravida purus diam, et dictum <a>felis venenatis</a> efficitur. Aenean ac <em>eleifend lacus</em>, in mollis lectus.
+        </div>
+    </article>
 </div>
+
 <div class="is-jumbo">
     <button class="button is-jumbo" @onclick="IncrementCount">Click me</button>
+    <button class="delete is-jumbo" @onclick="IncrementCount"></button>
+    <span class="icon is-jumbo">
+        <i class="fas fa-home"></i>
+    </span>
+    <progress class="progress is-jumbo" value="20" max="100">20%</progress>
+    <h1 class="title is-jumbo">Title 1</h1>
+    <h1 class="subtitle is-jumbo">Subtitle 1</h1>
+    <article class="message is-jumbo">
+        <div class="message-header">
+            <p>Small message</p>
+            <button class="delete is-jumbo" aria-label="delete"></button>
+        </div>
+        <div class="message-body">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta nec nulla.Nullam gravida purus diam, et dictum <a>felis venenatis</a> efficitur. Aenean ac <em>eleifend lacus</em>, in mollis lectus.
+        </div>
+    </article>
 </div>
 
 @code {
