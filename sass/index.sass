@@ -4,7 +4,9 @@
 .button,
 .title,
 .subtitle,
-.message 
+.message,
+.label,
+.input
   &.is-tiny
     font-size: $size-tiny
   &.is-jumbo
@@ -12,19 +14,19 @@
 
 .delete
   &.is-tiny
-    height: $height-tiny
-    max-height: $max-height-tiny
-    max-width: $max-width-tiny
-    min-height: $min-height-tiny
-    min-width: $min-width-tiny
-    width: $width-tiny
+    height: 11px
+    max-height: 11px
+    max-width: 11px
+    min-height: 11px
+    min-width: 11px
+    width: 11px
   &.is-jumbo
-    height: $height-jumbo
-    max-height: $max-height-jumbo
-    max-width: $max-width-jumbo
-    min-height: $min-height-jumbo
-    min-width: $min-width-jumbo
-    width: $width-jumbo
+    height: 60px
+    max-height: 60px
+    max-width: 60px
+    min-height: 60px
+    min-width: 60px
+    width: 60px
 
 .icon
   &.is-tiny
@@ -40,14 +42,11 @@
   &.is-jumbo
     height: $size-jumbo
 
-.label,
 .input
   &.is-tiny
-    border-radius: $control-radius-tiny
-    font-size: $size-tiny
+    border-radius: $radius-tiny
   &.is-jumbo
-    border-radius: $control-radius-jumbo
-    font-size: $size-jumbo
+    border-radius: $radius-jumbo
 
 .hero
   &.is-tiny
@@ -62,3 +61,20 @@
     padding: $section-padding-tiny
   &.is-jumbo
     padding: $section-padding-jumbo
+
+=typography-size-tiny($target:'')
+  @each $size in $sizes-tiny
+    $i: index($sizes-tiny, $size)
+    .is-size-#{$i}#{if($target == '', '', '-' + $target)}
+      &.is-tiny
+        font-size: $size !important
+
+=typography-size-jumbo($target:'')
+  @each $size in $sizes-jumbo
+    $i: index($sizes-jumbo, $size)
+    .is-size-#{$i}#{if($target == '', '', '-' + $target)}
+      &.is-jumbo
+        font-size: $size !important
+
++typography-size-tiny()
++typography-size-jumbo()

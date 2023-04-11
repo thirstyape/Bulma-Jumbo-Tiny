@@ -1,78 +1,62 @@
 ﻿@page "/delete"
 
-<div class="container">
+<PageTitle>Delete - Bulma Jumbo Tiny</PageTitle>
 
-    <section class="hero bd-hero bd-is-basic">
+<div class="container">
+    <section class="hero">
         <div class="hero-body">
             <div class="container">
-                <div class="bd-hero-body">
-                    <div class="bd-hero-heading">
-                        <h1 class="title algolia-lvl0">
-
-                            <p>Delete</p>
-
-                        </h1>
-                        <div class="subtitle is-4 algolia-lvl1">
-                            <p>A versatile <strong>delete</strong> cross</p>
-                        </div>
-                    </div>
+                <h1 class="title">
+                    Delete
+                </h1>
+                <div class="subtitle is-4">
+                    <p>A versatile <strong>delete</strong> cross</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <div class="bd-docs-body">
-        <div class="bd-docs-content bd-content algolia-content">
-            <h3 id="sizes" class="title is-4 is-spaced bd-anchor-title">
-                <span class="bd-anchor-name">
-                    Sizes
-                </span>
-                <a class="bd-anchor-link" href="#sizes">
-                    #
-                </a>
-            </h3>
+    <h3 class="title is-4 is-spaced">
+        Sizes
+    </h3>
 
-            <div class="content">
-                <p>
-                    It comes in <strong>4 sizes</strong>:
-                </p>
-            </div>
+    <div class="content">
+        <p>
+            It comes in <strong>6 sizes</strong>:
+        </p>
+    </div>
 
-            <div class="bd-snippet bd-is-vertical bd-is-size-1">
-                <div class="bd-snippet-example">
-                    <p class="bd-snippet-title">
-                        <span class="bd-snippet-tag bd-is-example">Example</span>
-                    </p>
-
-                    <div class="bd-snippet-preview">
-                        <button class="delete is-tiny"></button>
-                        <button class="delete is-small"></button>
-                        <button class="delete"></button>
-                        <button class="delete is-medium"></button>
-                        <button class="delete is-large"></button>
-                        <button class="delete is-jumbo"></button>
-                    </div>
-                </div>
-
-                <div class="bd-snippet-source">
-                    <p class="bd-snippet-title">
-                        <span class="bd-snippet-tag bd-is-html">HTML</span>
-                    </p>
-
-                    <div class="bd-snippet-code bd-highlight-full">
-                        <figure class="highlight">
-                            <pre><code class="language-html" data-lang="html"><span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"delete is-small"</span><span class="nt">&gt;&lt;/button&gt;</span>
-<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"delete is-tiny"</span><span class="nt">&gt;&lt;/button&gt;</span>
-<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"delete"</span><span class="nt">&gt;&lt;/button&gt;</span>
-<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"delete is-medium"</span><span class="nt">&gt;&lt;/button&gt;</span>
-<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"delete is-large"</span><span class="nt">&gt;&lt;/button&gt;</span>
-<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"delete is-jumbo"</span><span class="nt">&gt;&lt;/button&gt;</span></code></pre>
-                            <button class="button bd-copy">Copy</button>
-                        </figure>
-                    </div>
-                </div>
-            </div>
+    <div class="mb-6">
+        <p>
+            <span class="tag is-danger">Example</span>
+        </p>
+        <div class="buttons">
+            <button type="button" class="delete mr-3 is-tiny"></button>
+            <button type="button" class="delete mr-3 is-small"></button>
+            <button type="button" class="delete mr-3"></button>
+            <button type="button" class="delete mr-3 is-medium"></button>
+            <button type="button" class="delete mr-3 is-large"></button>
+            <button type="button" class="delete is-jumbo"></button>
         </div>
+    </div>
+
+    <div class="has-background-dark">
+        <p class="pl-3 pt-3 has-text-warning">
+            HTML
+        </p>
+
+        <figure>
+            <pre class="has-background-dark has-text-light" style="white-space: pre-line">
+                <code data-lang="html">
+                    <span class="has-text-info">&lt;button</span> <span class="has-text-warning">class=</span><span class="has-text-success">"delete is-tiny"</span><span class="has-text-info">&gt;</span><span class="has-text-info">&lt;/button&gt;</span>
+                    <span class="has-text-info">&lt;button</span> <span class="has-text-warning">class=</span><span class="has-text-success">"delete is-small"</span><span class="has-text-info">&gt;</span><span class="has-text-info">&lt;/button&gt;</span>
+                    <span class="has-text-info">&lt;button</span> <span class="has-text-warning">class=</span><span class="has-text-success">"delete"</span><span class="has-text-info">&gt;</span><span class="has-text-info">&lt;/button&gt;</span>
+                    <span class="has-text-info">&lt;button</span> <span class="has-text-warning">class=</span><span class="has-text-success">"delete is-medium"</span><span class="has-text-info">&gt;</span><span class="has-text-info">&lt;/button&gt;</span>
+                    <span class="has-text-info">&lt;button</span> <span class="has-text-warning">class=</span><span class="has-text-success">"delete is-large"</span><span class="has-text-info">&gt;</span><span class="has-text-info">&lt;/button&gt;</span>
+                    <span class="has-text-info">&lt;button</span> <span class="has-text-warning">class=</span><span class="has-text-success">"delete is-jumbo"</span><span class="has-text-info">&gt;</span><span class="has-text-info">&lt;/button&gt;</span>
+                </code>
+            </pre>
+        </figure>
     </div>
 </div>
 

@@ -1,13 +1,13 @@
 ﻿<div class="navbar-brand no-select">
-	<NavLink href="" ActiveClass="is-active" class="navbar-item" Match="NavLinkMatch.All">Bulma Jumbo Tiny</NavLink>
+    <NavLink href="" ActiveClass="is-active" class="navbar-item" Match="NavLinkMatch.All">Bulma Jumbo Tiny</NavLink>
 
-	<a role="button" class='navbar-burger' aria-label="menu" aria-expanded="false" data-target="demo-navigationmenu">
+    <a role="button" class='@BurgerCssClass' aria-label="menu" aria-expanded="false" data-target="demo-navigationmenu" @onclick="ToggleMenu">
 		<span aria-hidden="true"></span>
 		<span aria-hidden="true"></span>
 		<span aria-hidden="true"></span>
 	</a>
 </div>
-<div id="demo-navigationmenu" class='navbar-menu no-select'>
+<div id="demo-navigationmenu" class='@MenuCssClass'>
 	<div class="navbar-start">
         <div class="navbar-item has-dropdown is-hoverable">
             <a class="navbar-link">
@@ -20,9 +20,6 @@
                 </NavLink>
                 <NavLink href="delete" class="navbar-item">
                     Delete
-                </NavLink>
-                <NavLink href="icon" class="navbar-item">
-                    Icon
                 </NavLink>
                 <NavLink href="progress" class="navbar-item">
                     Progress
@@ -69,7 +66,17 @@
             </div>
         </div>
 	</div>
-	<div class="navbar-end">
-
-	</div>
 </div>
+
+@code {
+    private bool IsExpanded;
+
+    private string MenuCssClass => IsExpanded ? "navbar-menu no-select is-active" : "navbar-menu no-select";
+    private string BurgerCssClass => IsExpanded ? "navbar-burger is-active" : "navbar-burger";
+
+    private void ToggleMenu()
+    {
+        IsExpanded = !IsExpanded;
+        StateHasChanged();
+    }
+}
