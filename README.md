@@ -23,6 +23,7 @@ These instuctions can be used to acquire and implement the library.
 ## Authors
 
 * **Nathanael Frey**
+* **Afzal Khan**
 
 ## License
 
