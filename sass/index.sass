@@ -2,8 +2,6 @@
 @import 'variables'
 
 .button,
-.title,
-.subtitle,
 .message,
 .label,
 .input
@@ -61,6 +59,51 @@
     padding: $section-padding-tiny
   &.is-jumbo
     padding: $section-padding-jumbo
+
+.title,
+.subtitle
+  &.is-tiny
+    @each $size in $sizes-tiny
+      $i: index($sizes-tiny, $size)
+      &.is-#{$i}
+        font-size: $size
+  &.is-jumbo
+    @each $size in $sizes-jumbo
+      $i: index($sizes-jumbo, $size)
+      &.is-#{$i}
+        font-size: $size
+
+.tags
+  &.are-tiny
+    .tag:not(.is-normal):not(.is-medium):not(.is-large):not(.is-jumbo)
+      font-size: $size-tiny
+  &.are-medium
+    .tag:not(.is-tiny):not(.is-normal):not(.is-large):not(.is-jumbo)
+      font-size: $size-normal
+  &.are-large
+    .tag:not(.is-tiny):not(.is-normal):not(.is-medium):not(.is-jumbo)
+      font-size: $size-medium
+  &.are-jumbo
+    .tag:not(.is-tiny):not(.is-normal):not(.is-medium):not(.is-large)
+      font-size: $size-jumbo
+
+.tag:not(body)
+  &.is-tiny
+    font-size: $size-tiny
+  &.is-jumbo
+    font-size: $size-jumbo
+
+.pagination
+  &.is-tiny
+    font-size: $size-tiny
+  &.is-jumbo
+    font-size: $size-jumbo
+
+.tabs
+  &.is-tiny
+    font-size: $size-tiny
+  &.is-jumbo
+    font-size: $size-jumbo
 
 =typography-size-tiny($target:'')
   @each $size in $sizes-tiny
