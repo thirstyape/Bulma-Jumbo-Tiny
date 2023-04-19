@@ -1,14 +1,45 @@
-@import '../bulma/sass/utilities/derived-variables.sass'
+@import '../bulma/sass/utilities/mixins.sass'
+
+@import 'mixins'
 @import 'variables'
 
-.button,
-.message,
+// Shared
+.tag:not(body),
 .label,
-.input
+.file,
+.breadcrumb,
+.menu,
+.message,
+.pagination,
+.tabs
   &.is-tiny
     font-size: $size-tiny
   &.is-jumbo
     font-size: $size-jumbo
+
+// Elements
+.button
+  &.is-tiny
+    +button-tiny
+  &.is-jumbo
+    +button-jumbo
+
+.buttons
+  &.are-tiny
+    .button:not(.is-small):not(.is-normal):not(.is-medium):not(.is-large):not(.is-jumbo)
+      +button-tiny
+  &.are-small
+    .button:not(.is-tiny):not(.is-normal):not(.is-medium):not(.is-large):not(.is-jumbo)
+      +button-small
+  &.are-medium
+    .button:not(.is-tiny):not(.is-small):not(.is-normal):not(.is-large):not(.is-jumbo)
+      +button-medium
+  &.are-large
+    .button:not(.is-tiny):not(.is-small):not(.is-normal):not(.is-medium):not(.is-jumbo)
+      +button-large
+  &.are-jumbo
+    .button:not(.is-tiny):not(.is-small):not(.is-normal):not(.is-medium):not(.is-large)
+      +button-jumbo
 
 .delete
   &.is-tiny
@@ -40,26 +71,6 @@
   &.is-jumbo
     height: $size-jumbo
 
-.input
-  &.is-tiny
-    border-radius: $radius-tiny
-  &.is-jumbo
-    border-radius: $radius-jumbo
-
-.hero
-  &.is-tiny
-    .hero-body
-      padding: $hero-body-padding-tiny
-  &.is-jumbo
-    .hero-body
-      padding: $hero-body-padding-jumbo
-
-.section
-  &.is-tiny
-    padding: $section-padding-tiny
-  &.is-jumbo
-    padding: $section-padding-jumbo
-
 .title,
 .subtitle
   &.is-tiny
@@ -87,37 +98,58 @@
     .tag:not(.is-tiny):not(.is-normal):not(.is-medium):not(.is-large)
       font-size: $size-jumbo
 
-.tag:not(body)
+// Form
+.input,
+.select,
+.textarea
   &.is-tiny
-    font-size: $size-tiny
+    +control-tiny
   &.is-jumbo
-    font-size: $size-jumbo
+    +control-jumbo
 
-.pagination
+.input
+  &.is-jumbo
+    border-radius: $radius-jumbo
+
+.select
+  &.is-loading
+    &.is-tiny:after
+      font-size: $size-tiny
+    &.is-jumbo:after
+      font-size: $size-jumbo
+
+.control
+  &.has-icons-left,
+  &.has-icons-right
+    .input,
+    .select
+      &.is-tiny ~ .icon
+        font-size: $size-tiny
+      &.is-jumbo ~ .icon
+        font-size: $size-jumbo
+  &.is-loading
+    &.is-tiny:after
+      font-size: $size-tiny
+    &.is-jumbo:after
+      font-size: $size-jumbo
+
+// Layout
+.hero
   &.is-tiny
-    font-size: $size-tiny
+    .hero-body
+      padding: $hero-body-padding-tiny
   &.is-jumbo
-    font-size: $size-jumbo
+    +tablet
+      .hero-body
+        padding: $hero-body-padding-jumbo
 
-.tabs
-  &.is-tiny
-    font-size: $size-tiny
-  &.is-jumbo
-    font-size: $size-jumbo
+.section
+  +desktop
+    &.is-tiny
+      padding: $section-padding-tiny
+    &.is-jumbo
+      padding: $section-padding-jumbo
 
-=typography-size-tiny($target:'')
-  @each $size in $sizes-tiny
-    $i: index($sizes-tiny, $size)
-    .is-size-#{$i}#{if($target == '', '', '-' + $target)}
-      &.is-tiny
-        font-size: $size !important
-
-=typography-size-jumbo($target:'')
-  @each $size in $sizes-jumbo
-    $i: index($sizes-jumbo, $size)
-    .is-size-#{$i}#{if($target == '', '', '-' + $target)}
-      &.is-jumbo
-        font-size: $size !important
-
+// Helpers
 +typography-size-tiny()
 +typography-size-jumbo()

@@ -1,0 +1,45 @@
+// Elements
+=button-tiny
+  &:not(.is-rounded)
+    border-radius: $radius-tiny
+  font-size: $size-tiny
+=button-small
+  &:not(.is-rounded)
+    border-radius: $radius-small
+=button-normal
+  font-size: $size-normal
+=button-medium
+  font-size: $size-medium
+=button-large
+  font-size: $size-large
+=button-jumbo
+  font-size: $size-jumbo
+
+// Utilities
+=control-tiny
+  border-radius: $radius-tiny
+  font-size: $size-tiny
+=control-small
+  border-radius: $control-radius-small
+  font-size: $size-small
+=control-medium
+  font-size: $size-medium
+=control-large
+  font-size: $size-large
+=control-jumbo
+  font-size: $size-jumbo
+
+// Helpers
+=typography-size-tiny($target:'')
+  @each $size in $sizes-tiny
+    $i: index($sizes-tiny, $size)
+    .is-size-#{$i}#{if($target == '', '', '-' + $target)}
+      &.is-tiny
+        font-size: $size !important
+
+=typography-size-jumbo($target:'')
+  @each $size in $sizes-jumbo
+    $i: index($sizes-jumbo, $size)
+    .is-size-#{$i}#{if($target == '', '', '-' + $target)}
+      &.is-jumbo
+        font-size: $size !important
