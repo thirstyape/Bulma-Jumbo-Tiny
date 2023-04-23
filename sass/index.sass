@@ -151,5 +151,43 @@
       padding: $section-padding-jumbo
 
 // Helpers
+@each $property, $shortcut in $spacing-shortcuts
+  @each $name, $value in $spacing-values-tiny
+    // All directions
+    .#{$shortcut}-#{$name}-tiny
+      #{$property}: $value !important
+    // Cardinal directions
+    @each $direction, $suffix in $spacing-directions
+      .#{$shortcut}#{$suffix}-#{$name}-tiny
+        #{$property}-#{$direction}: $value !important
+    // Horizontal axis
+    @if $spacing-horizontal != null
+      .#{$shortcut}#{$spacing-horizontal}-#{$name}-tiny
+        #{$property}-left: $value !important
+        #{$property}-right: $value !important
+    // Vertical axis
+    @if $spacing-vertical != null
+      .#{$shortcut}#{$spacing-vertical}-#{$name}-tiny
+        #{$property}-top: $value !important
+        #{$property}-bottom: $value !important
+  @each $name, $value in $spacing-values-jumbo
+    // All directions
+    .#{$shortcut}-#{$name}-jumbo
+      #{$property}: $value !important
+    // Cardinal directions
+    @each $direction, $suffix in $spacing-directions
+      .#{$shortcut}#{$suffix}-#{$name}-jumbo
+        #{$property}-#{$direction}: $value !important
+    // Horizontal axis
+    @if $spacing-horizontal != null
+      .#{$shortcut}#{$spacing-horizontal}-#{$name}-jumbo
+        #{$property}-left: $value !important
+        #{$property}-right: $value !important
+    // Vertical axis
+    @if $spacing-vertical != null
+      .#{$shortcut}#{$spacing-vertical}-#{$name}-jumbo
+        #{$property}-top: $value !important
+        #{$property}-bottom: $value !important
+
 +typography-size-tiny()
 +typography-size-jumbo()

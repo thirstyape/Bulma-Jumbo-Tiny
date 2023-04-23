@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <base href=".">
+        <link href="../../css/bulma.min.css" rel="stylesheet">
+        <link href="../../css/bulma-jumbo-tiny.min.css" rel="stylesheet">
+		<link rel="icon" type="image/x-icon" href="../../favicon.ico">
+        <title>Message - Bulma Jumbo Tiny</title>
+    </head>
+
+    <body>
+        <nav class="navbar is-dark" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand no-select">
+                <a href="../../../../index.html" class="navbar-item">Bulma Jumbo Tiny</a>
+                <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="demo-navigationmenu">
+                    <span aria-hidden="true"></span>
+		            <span aria-hidden="true"></span>
+		            <span aria-hidden="true"></span>
+                </a>
+            </div>
+            <div id="demo-navigationmenu" class="navbar-menu no-select">
+                <div class="navbar-start">
+                    <div class="navbar-item has-dropdown is-hoverable">
+                        <a class="navbar-link is-active">Components</a>
+
+                        <div class="navbar-dropdown">
+                            <a href="breadcrumb.html" class="navbar-item">Breadcrumb</a>
+                            <a href="message.html" class="navbar-item is-active">Message</a>
+                            <a href="pagination.html" class="navbar-item">Pagination</a>
+                            <a href="tabs.html" class="navbar-item">Tabs</a>
+                        </div>
+                    </div>
+
+                    <div class="navbar-item has-dropdown is-hoverable">
+                        <a class="navbar-link">Elements</a>
+
+                        <div class="navbar-dropdown">
+                            <a href="../elements/button.html" class="navbar-item">Button</a>
+                            <a href="../elements/delete.html" class="navbar-item">Delete</a>
+                            <a href="../elements/progress.html" class="navbar-item">Progress</a>
+                            <a href="../elements/tag.html" class="navbar-item">Tag</a>
+                            <a href="../elements/title.html" class="navbar-item">Title</a>
+                        </div>
+                    </div>
+
+                    <div class="navbar-item has-dropdown is-hoverable">
+                        <a class="navbar-link">Form</a>
+
+                        <div class="navbar-dropdown">
+                            <a href="../form/file.html" class="navbar-item">File</a>
+                            <a href="../form/input.html" class="navbar-item">Input</a>
+                            <a href="../form/textarea.html" class="navbar-item">Textarea</a>
+                            <a href="../form/select.html" class="navbar-item">Select</a>
+                        </div>
+                    </div>
+
+                    <div class="navbar-item has-dropdown is-hoverable">
+                        <a class="navbar-link">Helpers</a>
+
+                        <div class="navbar-dropdown">
+                            <a href="../helpers/spacing.html" class="navbar-item">Spacing</a>
+                            <a href="../helpers/typography.html" class="navbar-item">Typography</a>
+                        </div>
+                    </div>
+
+                    <div class="navbar-item has-dropdown is-hoverable">
+                        <a class="navbar-link">Layout</a>
+
+                        <div class="navbar-dropdown">
+                            <a href="../layout/hero.html" class="navbar-item">Hero</a>
+                            <a href="../layout/section.html" class="navbar-item">Section</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <main role="main" class="is-main-section">
+			<div class="container"><section class="hero"><div class="hero-body"><div class="container"><h1 class="title" tabindex="-1">
+                    Message
+                </h1>
+                <div class="subtitle is-4"><p><strong>Message</strong> blocks, to emphasize part of your page</p></div></div></div></section>
+
+    <h3 class="title is-4 is-spaced">
+        Sizes
+    </h3>
+
+    <div class="mb-5"><p class="block"><span class="tag is-danger">Example</span>
+			<span class="tag is-info">Tiny</span></p>
+
+        <div class="columns"><div class="column is-6"><article class="message is-tiny"><div class="message-header"><p>Tiny message</p>
+						<button class="delete is-tiny" aria-label="delete"></button></div>
+					<div class="message-body">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta nec nulla.Nullam gravida purus diam, et dictum <a>felis venenatis</a> efficitur. Aenean ac <em>eleifend lacus</em>, in mollis lectus.
+					</div></article></div>
+            <div class="column is-6"><div class="has-background-dark"><p class="pl-3 pt-3 has-text-warning">
+						HTML
+					</p>
+
+					<figure><pre class="has-background-dark has-text-light" style="white-space: pre-line"><code data-lang="html"><span class="has-text-info">&lt;article</span> <span class="has-text-warning">class=</span><span class="has-text-success">"message is-tiny"</span><span class="has-text-info">&gt;</span>
+						        <span class="has-text-info">&lt;div</span> <span class="has-text-warning">class=</span><span class="has-text-success">"message-header"</span><span class="has-text-info">&gt;</span>
+						        <span class="has-text-info">&lt;p&gt;</span>Tiny message<span class="has-text-info">&lt;/p&gt;</span>
+						        <span class="has-text-info">&lt;button</span> <span class="has-text-warning">class=</span><span class="has-text-success">"delete is-tiny"</span> <span class="has-text-warning">aria-label=</span><span class="has-text-success">"delete"</span><span class="has-text-info">&gt;&lt;/button&gt;</span>
+						        <span class="has-text-info">&lt;/div&gt;</span>
+						        <span class="has-text-info">&lt;div</span> <span class="has-text-warning">class=</span><span class="has-text-success">"message-body"</span><span class="has-text-info">&gt;</span>
+							        Lorem ipsum dolor sit amet, consectetur adipiscing elit. <span class="has-text-info">&lt;strong&gt;</span>Pellentesque risus mi<span class="has-text-info">&lt;/strong&gt;</span>, tempus quis placerat ut, porta nec nulla.Nullam gravida purus diam, et dictum <span class="has-text-info">&lt;a&gt;</span>felis venenatis<span class="has-text-info">&lt;/a&gt;</span> efficitur. Aenean ac <span class="has-text-info">&lt;em&gt;</span>eleifend lacus<span class="has-text-info">&lt;/em&gt;</span>, in mollis lectus.
+						        <span class="has-text-info">&lt;/div&gt;</span>
+						        <span class="has-text-info">&lt;/article&gt;</span></code></pre></figure></div></div></div></div>
+    
+    <div class="mb-5"><p class="block"><span class="tag is-danger">Example</span>
+			<span class="tag is-info">Small</span></p>
+
+        <div class="columns"><div class="column is-6"><article class="message is-small"><div class="message-header"><p>Small message</p>
+						<button class="delete is-small" aria-label="delete"></button></div>
+					<div class="message-body">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta nec nulla.Nullam gravida purus diam, et dictum <a>felis venenatis</a> efficitur. Aenean ac <em>eleifend lacus</em>, in mollis lectus.
+					</div></article></div>
+            <div class="column is-6"><div class="has-background-dark"><p class="pl-3 pt-3 has-text-warning">
+						HTML
+					</p>
+
+					<figure><pre class="has-background-dark has-text-light" style="white-space: pre-line"><code data-lang="html"><span class="has-text-info">&lt;article</span> <span class="has-text-warning">class=</span><span class="has-text-success">"message is-small"</span><span class="has-text-info">&gt;</span>
+						        <span class="has-text-info">&lt;div</span> <span class="has-text-warning">class=</span><span class="has-text-success">"message-header"</span><span class="has-text-info">&gt;</span>
+						        <span class="has-text-info">&lt;p&gt;</span>Small message<span class="has-text-info">&lt;/p&gt;</span>
+						        <span class="has-text-info">&lt;button</span> <span class="has-text-warning">class=</span><span class="has-text-success">"delete is-small"</span> <span class="has-text-warning">aria-label=</span><span class="has-text-success">"delete"</span><span class="has-text-info">&gt;&lt;/button&gt;</span>
+						        <span class="has-text-info">&lt;/div&gt;</span>
+						        <span class="has-text-info">&lt;div</span> <span class="has-text-warning">class=</span><span class="has-text-success">"message-body"</span><span class="has-text-info">&gt;</span>
+							        Lorem ipsum dolor sit amet, consectetur adipiscing elit. <span class="has-text-info">&lt;strong&gt;</span>Pellentesque risus mi<span class="has-text-info">&lt;/strong&gt;</span>, tempus quis placerat ut, porta nec nulla.Nullam gravida purus diam, et dictum <span class="has-text-info">&lt;a&gt;</span>felis venenatis<span class="has-text-info">&lt;/a&gt;</span> efficitur. Aenean ac <span class="has-text-info">&lt;em&gt;</span>eleifend lacus<span class="has-text-info">&lt;/em&gt;</span>, in mollis lectus.
+						        <span class="has-text-info">&lt;/div&gt;</span>
+						        <span class="has-text-info">&lt;/article&gt;</span></code></pre></figure></div></div></div></div>
+    
+    <div class="mb-5"><p class="block"><span class="tag is-danger">Example</span>
+			<span class="tag is-info">Normal</span></p>
+
+        <div class="columns"><div class="column is-6"><article class="message is-normal"><div class="message-header"><p>Normal message</p>
+						<button class="delete is-normal" aria-label="delete"></button></div>
+					<div class="message-body">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta nec nulla.Nullam gravida purus diam, et dictum <a>felis venenatis</a> efficitur. Aenean ac <em>eleifend lacus</em>, in mollis lectus.
+					</div></article></div>
+            <div class="column is-6"><div class="has-background-dark"><p class="pl-3 pt-3 has-text-warning">
+						HTML
+					</p>
+
+					<figure><pre class="has-background-dark has-text-light" style="white-space: pre-line"><code data-lang="html"><span class="has-text-info">&lt;article</span> <span class="has-text-warning">class=</span><span class="has-text-success">"message is-normal"</span><span class="has-text-info">&gt;</span>
+						        <span class="has-text-info">&lt;div</span> <span class="has-text-warning">class=</span><span class="has-text-success">"message-header"</span><span class="has-text-info">&gt;</span>
+						        <span class="has-text-info">&lt;p&gt;</span>Normal message<span class="has-text-info">&lt;/p&gt;</span>
+						        <span class="has-text-info">&lt;button</span> <span class="has-text-warning">class=</span><span class="has-text-success">"delete is-normal"</span> <span class="has-text-warning">aria-label=</span><span class="has-text-success">"delete"</span><span class="has-text-info">&gt;&lt;/button&gt;</span>
+						        <span class="has-text-info">&lt;/div&gt;</span>
+						        <span class="has-text-info">&lt;div</span> <span class="has-text-warning">class=</span><span class="has-text-success">"message-body"</span><span class="has-text-info">&gt;</span>
+							        Lorem ipsum dolor sit amet, consectetur adipiscing elit. <span class="has-text-info">&lt;strong&gt;</span>Pellentesque risus mi<span class="has-text-info">&lt;/strong&gt;</span>, tempus quis placerat ut, porta nec nulla.Nullam gravida purus diam, et dictum <span class="has-text-info">&lt;a&gt;</span>felis venenatis<span class="has-text-info">&lt;/a&gt;</span> efficitur. Aenean ac <span class="has-text-info">&lt;em&gt;</span>eleifend lacus<span class="has-text-info">&lt;/em&gt;</span>, in mollis lectus.
+						        <span class="has-text-info">&lt;/div&gt;</span>
+						        <span class="has-text-info">&lt;/article&gt;</span></code></pre></figure></div></div></div></div>
+    
+    <div class="mb-5"><p class="block"><span class="tag is-danger">Example</span>
+			<span class="tag is-info">Medium</span></p>
+
+        <div class="columns"><div class="column is-6"><article class="message is-medium"><div class="message-header"><p>Medium message</p>
+						<button class="delete is-medium" aria-label="delete"></button></div>
+					<div class="message-body">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta nec nulla.Nullam gravida purus diam, et dictum <a>felis venenatis</a> efficitur. Aenean ac <em>eleifend lacus</em>, in mollis lectus.
+					</div></article></div>
+            <div class="column is-6"><div class="has-background-dark"><p class="pl-3 pt-3 has-text-warning">
+						HTML
+					</p>
+
+					<figure><pre class="has-background-dark has-text-light" style="white-space: pre-line"><code data-lang="html"><span class="has-text-info">&lt;article</span> <span class="has-text-warning">class=</span><span class="has-text-success">"message is-medium"</span><span class="has-text-info">&gt;</span>
+								<span class="has-text-info">&lt;div</span> <span class="has-text-warning">class=</span><span class="has-text-success">"message-header"</span><span class="has-text-info">&gt;</span>
+								<span class="has-text-info">&lt;p&gt;</span>Medium message<span class="has-text-info">&lt;/p&gt;</span>
+								<span class="has-text-info">&lt;button</span> <span class="has-text-warning">class=</span><span class="has-text-success">"delete is-medium"</span> <span class="has-text-warning">aria-label=</span><span class="has-text-success">"delete"</span><span class="has-text-info">&gt;&lt;/button&gt;</span>
+								<span class="has-text-info">&lt;/div&gt;</span>
+								<span class="has-text-info">&lt;div</span> <span class="has-text-warning">class=</span><span class="has-text-success">"message-body"</span><span class="has-text-info">&gt;</span>
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. <span class="has-text-info">&lt;strong&gt;</span>Pellentesque risus mi<span class="has-text-info">&lt;/strong&gt;</span>, tempus quis placerat ut, porta nec nulla.Nullam gravida purus diam, et dictum <span class="has-text-info">&lt;a&gt;</span>felis venenatis<span class="has-text-info">&lt;/a&gt;</span> efficitur. Aenean ac <span class="has-text-info">&lt;em&gt;</span>eleifend lacus<span class="has-text-info">&lt;/em&gt;</span>, in mollis lectus.
+								<span class="has-text-info">&lt;/div&gt;</span>
+								<span class="has-text-info">&lt;/article&gt;</span></code></pre></figure></div></div></div></div>
+    
+    <div class="mb-5"><p class="block"><span class="tag is-danger">Example</span>
+			<span class="tag is-info">Large</span></p>
+
+		<div class="columns"><div class="column is-6"><article class="message is-large"><div class="message-header"><p>Large message</p>
+						<button class="delete is-large" aria-label="delete"></button></div>
+					<div class="message-body">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta nec nulla.Nullam gravida purus diam, et dictum <a>felis venenatis</a> efficitur. Aenean ac <em>eleifend lacus</em>, in mollis lectus.
+					</div></article></div>
+			<div class="column is-6"><div class="has-background-dark"><p class="pl-3 pt-3 has-text-warning">
+						HTML
+					</p>
+
+					<figure><pre class="has-background-dark has-text-light" style="white-space: pre-line"><code data-lang="html"><span class="has-text-info">&lt;article</span> <span class="has-text-warning">class=</span><span class="has-text-success">"message is-large"</span><span class="has-text-info">&gt;</span>
+								<span class="has-text-info">&lt;div</span> <span class="has-text-warning">class=</span><span class="has-text-success">"message-header"</span><span class="has-text-info">&gt;</span>
+								<span class="has-text-info">&lt;p&gt;</span>Large message<span class="has-text-info">&lt;/p&gt;</span>
+								<span class="has-text-info">&lt;button</span> <span class="has-text-warning">class=</span><span class="has-text-success">"delete is-large"</span> <span class="has-text-warning">aria-label=</span><span class="has-text-success">"delete"</span><span class="has-text-info">&gt;&lt;/button&gt;</span>
+								<span class="has-text-info">&lt;/div&gt;</span>
+								<span class="has-text-info">&lt;div</span> <span class="has-text-warning">class=</span><span class="has-text-success">"message-body"</span><span class="has-text-info">&gt;</span>
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. <span class="has-text-info">&lt;strong&gt;</span>Pellentesque risus mi<span class="has-text-info">&lt;/strong&gt;</span>, tempus quis placerat ut, porta nec nulla.Nullam gravida purus diam, et dictum <span class="has-text-info">&lt;a&gt;</span>felis venenatis<span class="has-text-info">&lt;/a&gt;</span> efficitur. Aenean ac <span class="has-text-info">&lt;em&gt;</span>eleifend lacus<span class="has-text-info">&lt;/em&gt;</span>, in mollis lectus.
+								<span class="has-text-info">&lt;/div&gt;</span>
+								<span class="has-text-info">&lt;/article&gt;</span></code></pre></figure></div></div></div></div>
+    
+    <div class="mb-5"><p class="block"><span class="tag is-danger">Example</span>
+			<span class="tag is-info">Jumbo</span></p>
+
+		<div class="columns"><div class="column is-6"><article class="message is-jumbo"><div class="message-header"><p>Jumbo message</p>
+						<button class="delete is-jumbo" aria-label="delete"></button></div>
+					<div class="message-body">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta nec nulla.Nullam gravida purus diam, et dictum <a>felis venenatis</a> efficitur. Aenean ac <em>eleifend lacus</em>, in mollis lectus.
+					</div></article></div>
+			<div class="column is-6"><div class="has-background-dark"><p class="pl-3 pt-3 has-text-warning">
+						HTML
+					</p>
+
+					<figure><pre class="has-background-dark has-text-light" style="white-space: pre-line"><code data-lang="html"><span class="has-text-info">&lt;article</span> <span class="has-text-warning">class=</span><span class="has-text-success">"message is-jumbo"</span><span class="has-text-info">&gt;</span>
+								<span class="has-text-info">&lt;div</span> <span class="has-text-warning">class=</span><span class="has-text-success">"message-header"</span><span class="has-text-info">&gt;</span>
+								<span class="has-text-info">&lt;p&gt;</span>Jumbo message<span class="has-text-info">&lt;/p&gt;</span>
+								<span class="has-text-info">&lt;button</span> <span class="has-text-warning">class=</span><span class="has-text-success">"delete is-jumbo"</span> <span class="has-text-warning">aria-label=</span><span class="has-text-success">"delete"</span><span class="has-text-info">&gt;&lt;/button&gt;</span>
+								<span class="has-text-info">&lt;/div&gt;</span>
+								<span class="has-text-info">&lt;div</span> <span class="has-text-warning">class=</span><span class="has-text-success">"message-body"</span><span class="has-text-info">&gt;</span>
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. <span class="has-text-info">&lt;strong&gt;</span>Pellentesque risus mi<span class="has-text-info">&lt;/strong&gt;</span>, tempus quis placerat ut, porta nec nulla.Nullam gravida purus diam, et dictum <span class="has-text-info">&lt;a&gt;</span>felis venenatis<span class="has-text-info">&lt;/a&gt;</span> efficitur. Aenean ac <span class="has-text-info">&lt;em&gt;</span>eleifend lacus<span class="has-text-info">&lt;/em&gt;</span>, in mollis lectus.
+								<span class="has-text-info">&lt;/div&gt;</span>
+								<span class="has-text-info">&lt;/article&gt;</span></code></pre></figure></div></div></div></div></div>
+		</main>
+	</body>
+</html>
