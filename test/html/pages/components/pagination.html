@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <base href=".">
+        <link href="../../css/bulma.min.css" rel="stylesheet">
+        <link href="../../css/bulma-jumbo-tiny.min.css" rel="stylesheet">
+        <link rel="icon" type="image/x-icon" href="../../favicon.ico">
+        <title>Pagination - Bulma Jumbo Tiny</title>
+    </head>
+
+    <body>
+        <nav class="navbar is-dark" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand no-select">
+                <a href="../../../../index.html" class="navbar-item">Bulma Jumbo Tiny</a>
+                <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="demo-navigationmenu">
+                    <span aria-hidden="true"></span>
+		            <span aria-hidden="true"></span>
+		            <span aria-hidden="true"></span>
+                </a>
+            </div>
+            <div id="demo-navigationmenu" class="navbar-menu no-select">
+                <div class="navbar-start">
+                    <div class="navbar-item has-dropdown is-hoverable">
+                        <a class="navbar-link is-active">Components</a>
+
+                        <div class="navbar-dropdown">
+                            <a href="breadcrumb.html" class="navbar-item">Breadcrumb</a>
+                            <a href="message.html" class="navbar-item">Message</a>
+                            <a href="pagination.html" class="navbar-item is-active">Pagination</a>
+                            <a href="tabs.html" class="navbar-item">Tabs</a>
+                        </div>
+                    </div>
+
+                    <div class="navbar-item has-dropdown is-hoverable">
+                        <a class="navbar-link">Elements</a>
+
+                        <div class="navbar-dropdown">
+                            <a href="../elements/button.html" class="navbar-item">Button</a>
+                            <a href="../elements/delete.html" class="navbar-item">Delete</a>
+                            <a href="../elements/progress.html" class="navbar-item">Progress</a>
+                            <a href="../elements/tag.html" class="navbar-item">Tag</a>
+                            <a href="../elements/title.html" class="navbar-item">Title</a>
+                        </div>
+                    </div>
+
+                    <div class="navbar-item has-dropdown is-hoverable">
+                        <a class="navbar-link">Form</a>
+
+                        <div class="navbar-dropdown">
+                            <a href="../form/file.html" class="navbar-item">File</a>
+                            <a href="../form/input.html" class="navbar-item">Input</a>
+                            <a href="../form/textarea.html" class="navbar-item">Textarea</a>
+                            <a href="../form/select.html" class="navbar-item">Select</a>
+                        </div>
+                    </div>
+
+                    <div class="navbar-item has-dropdown is-hoverable">
+                        <a class="navbar-link">Helpers</a>
+
+                        <div class="navbar-dropdown">
+                            <a href="../helpers/spacing.html" class="navbar-item">Spacing</a>
+                            <a href="../helpers/typography.html" class="navbar-item">Typography</a>
+                        </div>
+                    </div>
+
+                    <div class="navbar-item has-dropdown is-hoverable">
+                        <a class="navbar-link">Layout</a>
+
+                        <div class="navbar-dropdown">
+                            <a href="../layout/hero.html" class="navbar-item">Hero</a>
+                            <a href="../layout/section.html" class="navbar-item">Section</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <main role="main" class="is-main-section">
+            <div class="container"><section class="hero"><div class="hero-body"><div class="container"><h1 class="title" tabindex="-1">
+                    Pagination
+                </h1>
+                <div class="subtitle is-4"><p>A responsive, usable, and flexible <strong>pagination</strong></p></div></div></div></section>
+
+    <h3 class="title is-4 is-spaced">
+        Sizes
+    </h3>
+
+    <p class="content">
+        The pagination comes in <strong>5 additional sizes</strong>.<br>
+        You only need to append the <strong>modifier</strong> <code>is-tiny</code>, <code>is-small</code>, <code>is-medium</code>, <code>is-large</code>, or <code>is-jumbo</code> to the <code>pagination</code> component.
+    </p>
+
+    <div class="mb-5"><p class="block"><span class="tag is-danger">Example</span>
+            <span class="tag is-info">Tiny</span></p>
+
+        <nav class="pagination is-tiny" role="navigation" aria-label="pagination"><a class="pagination-previous">Previous</a>
+            <a class="pagination-next">Next page</a>
+            <ul class="pagination-list"><li><a class="pagination-link" aria-label="Goto page 1">1</a></li>
+                <li><span class="pagination-ellipsis">…</span></li>
+                <li><a class="pagination-link" aria-label="Goto page 45">45</a></li>
+                <li><a class="pagination-link is-current" aria-label="Page 46" aria-current="page">46</a></li>
+                <li><a class="pagination-link" aria-label="Goto page 47">47</a></li>
+                <li><span class="pagination-ellipsis">…</span></li>
+                <li><a class="pagination-link" aria-label="Goto page 86">86</a></li></ul></nav>
+
+        <div class="has-background-dark"><p class="pl-3 pt-3 has-text-warning">
+                HTML
+            </p>
+
+            <figure class="highlight"><pre class="has-background-dark has-text-light" style="white-space: pre-line"><code data-lang="html"><span class="has-text-info">&lt;nav</span> <span class="has-text-warning">class=</span><span class="has-text-success">"pagination is-tiny"</span> <span class="has-text-warning">role=</span><span class="has-text-success">"navigation"</span> <span class="has-text-warning">aria-label=</span><span class="has-text-success">"pagination"</span><span class="has-text-info">&gt;</span>
+                        <span class="has-text-info">&lt;a</span> <span class="has-text-warning">class=</span><span class="has-text-success">"pagination-previous"</span><span class="has-text-info">&gt;</span>Previous<span class="has-text-info">&lt;/a&gt;</span>
+                        <span class="has-text-info">&lt;a</span> <span class="has-text-warning">class=</span><span class="has-text-success">"pagination-next"</span><span class="has-text-info">&gt;</span>Next page<span class="has-text-info">&lt;/a&gt;</span>
+                        <span class="has-text-info">&lt;ul</span> <span class="has-text-warning">class=</span><span class="has-text-success">"pagination-list"</span><span class="has-text-info">&gt;</span>
+                        <span class="has-text-info">&lt;li&gt;&lt;a</span> <span class="has-text-warning">class=</span><span class="has-text-success">"pagination-link"</span> <span class="has-text-warning">aria-label=</span><span class="has-text-success">"Goto page 1"</span><span class="has-text-info">&gt;</span>1<span class="has-text-info">&lt;/a&gt;&lt;/li&gt;</span>
+                        <span class="has-text-info">&lt;li&gt;&lt;span</span> <span class="has-text-warning">class=</span><span class="has-text-success">"pagination-ellipsis"</span><span class="has-text-info">&gt;</span><span class="ni">&amp;hellip;</span><span class="has-text-info">&lt;/span&gt;&lt;/li&gt;</span>
+                        <span class="has-text-info">&lt;li&gt;&lt;a</span> <span class="has-text-warning">class=</span><span class="has-text-success">"pagination-link"</span> <span class="has-text-warning">aria-label=</span><span class="has-text-success">"Goto page 45"</span><span class="has-text-info">&gt;</span>45<span class="has-text-info">&lt;/a&gt;&lt;/li&gt;</span>
+                        <span class="has-text-info">&lt;li&gt;&lt;a</span> <span class="has-text-warning">class=</span><span class="has-text-success">"pagination-link is-current"</span> <span class="has-text-warning">aria-label=</span><span class="has-text-success">"Page 46"</span> <span class="has-text-warning">aria-current=</span><span class="has-text-success">"page"</span><span class="has-text-info">&gt;</span>46<span class="has-text-info">&lt;/a&gt;&lt;/li&gt;</span>
+                        <span class="has-text-info">&lt;li&gt;&lt;a</span> <span class="has-text-warning">class=</span><span class="has-text-success">"pagination-link"</span> <span class="has-text-warning">aria-label=</span><span class="has-text-success">"Goto page 47"</span><span class="has-text-info">&gt;</span>47<span class="has-text-info">&lt;/a&gt;&lt;/li&gt;</span>
+                        <span class="has-text-info">&lt;li&gt;&lt;span</span> <span class="has-text-warning">class=</span><span class="has-text-success">"pagination-ellipsis"</span><span class="has-text-info">&gt;</span><span class="ni">&amp;hellip;</span><span class="has-text-info">&lt;/span&gt;&lt;/li&gt;</span>
+                        <span class="has-text-info">&lt;li&gt;&lt;a</span> <span class="has-text-warning">class=</span><span class="has-text-success">"pagination-link"</span> <span class="has-text-warning">aria-label=</span><span class="has-text-success">"Goto page 86"</span><span class="has-text-info">&gt;</span>86<span class="has-text-info">&lt;/a&gt;&lt;/li&gt;</span>
+                        <span class="has-text-info">&lt;/ul&gt;</span>
+                        <span class="has-text-info">&lt;/nav&gt;</span></code></pre></figure></div></div>
+    
+    <div class="mb-5"><p class="block"><span class="tag is-danger">Example</span>
+            <span class="tag is-info">Small</span></p>
+
+        <nav class="pagination is-small" role="navigation" aria-label="pagination"><a class="pagination-previous">Previous</a>
+            <a class="pagination-next">Next page</a>
+            <ul class="pagination-list"><li><a class="pagination-link" aria-label="Goto page 1">1</a></li>
+                <li><span class="pagination-ellipsis">…</span></li>
+                <li><a class="pagination-link" aria-label="Goto page 45">45</a></li>
+                <li><a class="pagination-link is-current" aria-label="Page 46" aria-current="page">46</a></li>
+                <li><a class="pagination-link" aria-label="Goto page 47">47</a></li>
+                <li><span class="pagination-ellipsis">…</span></li>
+                <li><a class="pagination-link" aria-label="Goto page 86">86</a></li></ul></nav>
+
+        <div class="has-background-dark"><p class="pl-3 pt-3 has-text-warning">
+                HTML
+            </p>
+
+            <figure class="highlight"><pre class="has-background-dark has-text-light" style="white-space: pre-line"><code data-lang="html"><span class="has-text-info">&lt;nav</span> <span class="has-text-warning">class=</span><span class="has-text-success">"pagination is-small"</span> <span class="has-text-warning">role=</span><span class="has-text-success">"navigation"</span> <span class="has-text-warning">aria-label=</span><span class="has-text-success">"pagination"</span><span class="has-text-info">&gt;</span>
+                        <span class="has-text-info">&lt;a</span> <span class="has-text-warning">class=</span><span class="has-text-success">"pagination-previous"</span><span class="has-text-info">&gt;</span>Previous<span class="has-text-info">&lt;/a&gt;</span>
+                        <span class="has-text-info">&lt;a</span> <span class="has-text-warning">class=</span><span class="has-text-success">"pagination-next"</span><span class="has-text-info">&gt;</span>Next page<span class="has-text-info">&lt;/a&gt;</span>
+                        <span class="has-text-info">&lt;ul</span> <span class="has-text-warning">class=</span><span class="has-text-success">"pagination-list"</span><span class="has-text-info">&gt;</span>
+                        <span class="has-text-info">&lt;li&gt;&lt;a</span> <span class="has-text-warning">class=</span><span class="has-text-success">"pagination-link"</span> <span class="has-text-warning">aria-label=</span><span class="has-text-success">"Goto page 1"</span><span class="has-text-info">&gt;</span>1<span class="has-text-info">&lt;/a&gt;&lt;/li&gt;</span>
+                        <span class="has-text-info">&lt;li&gt;&lt;span</span> <span class="has-text-warning">class=</span><span class="has-text-success">"pagination-ellipsis"</span><span class="has-text-info">&gt;</span><span class="ni">&amp;hellip;</span><span class="has-text-info">&lt;/span&gt;&lt;/li&gt;</span>
+                        <span class="has-text-info">&lt;li&gt;&lt;a</span> <span class="has-text-warning">class=</span><span class="has-text-success">"pagination-link"</span> <span class="has-text-warning">aria-label=</span><span class="has-text-success">"Goto page 45"</span><span class="has-text-info">&gt;</span>45<span class="has-text-info">&lt;/a&gt;&lt;/li&gt;</span>
+                        <span class="has-text-info">&lt;li&gt;&lt;a</span> <span class="has-text-warning">class=</span><span class="has-text-success">"pagination-link is-current"</span> <span class="has-text-warning">aria-label=</span><span class="has-text-success">"Page 46"</span> <span class="has-text-warning">aria-current=</span><span class="has-text-success">"page"</span><span class="has-text-info">&gt;</span>46<span class="has-text-info">&lt;/a&gt;&lt;/li&gt;</span>
+                        <span class="has-text-info">&lt;li&gt;&lt;a</span> <span class="has-text-warning">class=</span><span class="has-text-success">"pagination-link"</span> <span class="has-text-warning">aria-label=</span><span class="has-text-success">"Goto page 47"</span><span class="has-text-info">&gt;</span>47<span class="has-text-info">&lt;/a&gt;&lt;/li&gt;</span>
+                        <span class="has-text-info">&lt;li&gt;&lt;span</span> <span class="has-text-warning">class=</span><span class="has-text-success">"pagination-ellipsis"</span><span class="has-text-info">&gt;</span><span class="ni">&amp;hellip;</span><span class="has-text-info">&lt;/span&gt;&lt;/li&gt;</span>
+                        <span class="has-text-info">&lt;li&gt;&lt;a</span> <span class="has-text-warning">class=</span><span class="has-text-success">"pagination-link"</span> <span class="has-text-warning">aria-label=</span><span class="has-text-success">"Goto page 86"</span><span class="has-text-info">&gt;</span>86<span class="has-text-info">&lt;/a&gt;&lt;/li&gt;</span>
+                        <span class="has-text-info">&lt;/ul&gt;</span>
+                        <span class="has-text-info">&lt;/nav&gt;</span></code></pre></figure></div></div>
+    
+    <div class="mb-5"><p class="block"><span class="tag is-danger">Example</span>
+            <span class="tag is-info">Medium</span></p>
+
+        <nav class="pagination is-medium" role="navigation" aria-label="pagination"><a class="pagination-previous">Previous</a>
+            <a class="pagination-next">Next page</a>
+            <ul class="pagination-list"><li><a class="pagination-link" aria-label="Goto page 1">1</a></li>
+                <li><span class="pagination-ellipsis">…</span></li>
+                <li><a class="pagination-link" aria-label="Goto page 45">45</a></li>
+                <li><a class="pagination-link is-current" aria-label="Page 46" aria-current="page">46</a></li>
+                <li><a class="pagination-link" aria-label="Goto page 47">47</a></li>
+                <li><span class="pagination-ellipsis">…</span></li>
+                <li><a class="pagination-link" aria-label="Goto page 86">86</a></li></ul></nav>
+
+        <div class="has-background-dark"><p class="pl-3 pt-3 has-text-warning">
+                HTML
+            </p>
+
+            <figure class="highlight"><pre class="has-background-dark has-text-light" style="white-space: pre-line"><code data-lang="html"><span class="has-text-info">&lt;nav</span> <span class="has-text-warning">class=</span><span class="has-text-success">"pagination is-medium"</span> <span class="has-text-warning">role=</span><span class="has-text-success">"navigation"</span> <span class="has-text-warning">aria-label=</span><span class="has-text-success">"pagination"</span><span class="has-text-info">&gt;</span>
+                        <span class="has-text-info">&lt;a</span> <span class="has-text-warning">class=</span><span class="has-text-success">"pagination-previous"</span><span class="has-text-info">&gt;</span>Previous<span class="has-text-info">&lt;/a&gt;</span>
+                        <span class="has-text-info">&lt;a</span> <span class="has-text-warning">class=</span><span class="has-text-success">"pagination-next"</span><span class="has-text-info">&gt;</span>Next page<span class="has-text-info">&lt;/a&gt;</span>
+                        <span class="has-text-info">&lt;ul</span> <span class="has-text-warning">class=</span><span class="has-text-success">"pagination-list"</span><span class="has-text-info">&gt;</span>
+                        <span class="has-text-info">&lt;li&gt;&lt;a</span> <span class="has-text-warning">class=</span><span class="has-text-success">"pagination-link"</span> <span class="has-text-warning">aria-label=</span><span class="has-text-success">"Goto page 1"</span><span class="has-text-info">&gt;</span>1<span class="has-text-info">&lt;/a&gt;&lt;/li&gt;</span>
+                        <span class="has-text-info">&lt;li&gt;&lt;span</span> <span class="has-text-warning">class=</span><span class="has-text-success">"pagination-ellipsis"</span><span class="has-text-info">&gt;</span><span class="ni">&amp;hellip;</span><span class="has-text-info">&lt;/span&gt;&lt;/li&gt;</span>
+                        <span class="has-text-info">&lt;li&gt;&lt;a</span> <span class="has-text-warning">class=</span><span class="has-text-success">"pagination-link"</span> <span class="has-text-warning">aria-label=</span><span class="has-text-success">"Goto page 45"</span><span class="has-text-info">&gt;</span>45<span class="has-text-info">&lt;/a&gt;&lt;/li&gt;</span>
+                        <span class="has-text-info">&lt;li&gt;&lt;a</span> <span class="has-text-warning">class=</span><span class="has-text-success">"pagination-link is-current"</span> <span class="has-text-warning">aria-label=</span><span class="has-text-success">"Page 46"</span> <span class="has-text-warning">aria-current=</span><span class="has-text-success">"page"</span><span class="has-text-info">&gt;</span>46<span class="has-text-info">&lt;/a&gt;&lt;/li&gt;</span>
+                        <span class="has-text-info">&lt;li&gt;&lt;a</span> <span class="has-text-warning">class=</span><span class="has-text-success">"pagination-link"</span> <span class="has-text-warning">aria-label=</span><span class="has-text-success">"Goto page 47"</span><span class="has-text-info">&gt;</span>47<span class="has-text-info">&lt;/a&gt;&lt;/li&gt;</span>
+                        <span class="has-text-info">&lt;li&gt;&lt;span</span> <span class="has-text-warning">class=</span><span class="has-text-success">"pagination-ellipsis"</span><span class="has-text-info">&gt;</span><span class="ni">&amp;hellip;</span><span class="has-text-info">&lt;/span&gt;&lt;/li&gt;</span>
+                        <span class="has-text-info">&lt;li&gt;&lt;a</span> <span class="has-text-warning">class=</span><span class="has-text-success">"pagination-link"</span> <span class="has-text-warning">aria-label=</span><span class="has-text-success">"Goto page 86"</span><span class="has-text-info">&gt;</span>86<span class="has-text-info">&lt;/a&gt;&lt;/li&gt;</span>
+                        <span class="has-text-info">&lt;/ul&gt;</span>
+                        <span class="has-text-info">&lt;/nav&gt;</span></code></pre></figure></div></div>
+    
+    <div class="mb-5"><p class="block"><span class="tag is-danger">Example</span>
+            <span class="tag is-info">Large</span></p>
+
+        <nav class="pagination is-large" role="navigation" aria-label="pagination"><a class="pagination-previous">Previous</a>
+            <a class="pagination-next">Next page</a>
+            <ul class="pagination-list"><li><a class="pagination-link" aria-label="Goto page 1">1</a></li>
+                <li><span class="pagination-ellipsis">…</span></li>
+                <li><a class="pagination-link" aria-label="Goto page 45">45</a></li>
+                <li><a class="pagination-link is-current" aria-label="Page 46" aria-current="page">46</a></li>
+                <li><a class="pagination-link" aria-label="Goto page 47">47</a></li>
+                <li><span class="pagination-ellipsis">…</span></li>
+                <li><a class="pagination-link" aria-label="Goto page 86">86</a></li></ul></nav>
+
+        <div class="has-background-dark"><p class="pl-3 pt-3 has-text-warning">
+                HTML
+            </p>
+
+            <figure class="highlight"><pre class="has-background-dark has-text-light" style="white-space: pre-line"><code data-lang="html"><span class="has-text-info">&lt;nav</span> <span class="has-text-warning">class=</span><span class="has-text-success">"pagination is-large"</span> <span class="has-text-warning">role=</span><span class="has-text-success">"navigation"</span> <span class="has-text-warning">aria-label=</span><span class="has-text-success">"pagination"</span><span class="has-text-info">&gt;</span>
+                        <span class="has-text-info">&lt;a</span> <span class="has-text-warning">class=</span><span class="has-text-success">"pagination-previous"</span><span class="has-text-info">&gt;</span>Previous<span class="has-text-info">&lt;/a&gt;</span>
+                        <span class="has-text-info">&lt;a</span> <span class="has-text-warning">class=</span><span class="has-text-success">"pagination-next"</span><span class="has-text-info">&gt;</span>Next page<span class="has-text-info">&lt;/a&gt;</span>
+                        <span class="has-text-info">&lt;ul</span> <span class="has-text-warning">class=</span><span class="has-text-success">"pagination-list"</span><span class="has-text-info">&gt;</span>
+                        <span class="has-text-info">&lt;li&gt;&lt;a</span> <span class="has-text-warning">class=</span><span class="has-text-success">"pagination-link"</span> <span class="has-text-warning">aria-label=</span><span class="has-text-success">"Goto page 1"</span><span class="has-text-info">&gt;</span>1<span class="has-text-info">&lt;/a&gt;&lt;/li&gt;</span>
+                        <span class="has-text-info">&lt;li&gt;&lt;span</span> <span class="has-text-warning">class=</span><span class="has-text-success">"pagination-ellipsis"</span><span class="has-text-info">&gt;</span><span class="ni">&amp;hellip;</span><span class="has-text-info">&lt;/span&gt;&lt;/li&gt;</span>
+                        <span class="has-text-info">&lt;li&gt;&lt;a</span> <span class="has-text-warning">class=</span><span class="has-text-success">"pagination-link"</span> <span class="has-text-warning">aria-label=</span><span class="has-text-success">"Goto page 45"</span><span class="has-text-info">&gt;</span>45<span class="has-text-info">&lt;/a&gt;&lt;/li&gt;</span>
+                        <span class="has-text-info">&lt;li&gt;&lt;a</span> <span class="has-text-warning">class=</span><span class="has-text-success">"pagination-link is-current"</span> <span class="has-text-warning">aria-label=</span><span class="has-text-success">"Page 46"</span> <span class="has-text-warning">aria-current=</span><span class="has-text-success">"page"</span><span class="has-text-info">&gt;</span>46<span class="has-text-info">&lt;/a&gt;&lt;/li&gt;</span>
+                        <span class="has-text-info">&lt;li&gt;&lt;a</span> <span class="has-text-warning">class=</span><span class="has-text-success">"pagination-link"</span> <span class="has-text-warning">aria-label=</span><span class="has-text-success">"Goto page 47"</span><span class="has-text-info">&gt;</span>47<span class="has-text-info">&lt;/a&gt;&lt;/li&gt;</span>
+                        <span class="has-text-info">&lt;li&gt;&lt;span</span> <span class="has-text-warning">class=</span><span class="has-text-success">"pagination-ellipsis"</span><span class="has-text-info">&gt;</span><span class="ni">&amp;hellip;</span><span class="has-text-info">&lt;/span&gt;&lt;/li&gt;</span>
+                        <span class="has-text-info">&lt;li&gt;&lt;a</span> <span class="has-text-warning">class=</span><span class="has-text-success">"pagination-link"</span> <span class="has-text-warning">aria-label=</span><span class="has-text-success">"Goto page 86"</span><span class="has-text-info">&gt;</span>86<span class="has-text-info">&lt;/a&gt;&lt;/li&gt;</span>
+                        <span class="has-text-info">&lt;/ul&gt;</span>
+                        <span class="has-text-info">&lt;/nav&gt;</span></code></pre></figure></div></div>
+    
+    <div class="mb-5"><p class="block"><span class="tag is-danger">Example</span>
+            <span class="tag is-info">Jumbo</span></p>
+
+        <nav class="pagination is-jumbo" role="navigation" aria-label="pagination"><a class="pagination-previous">Previous</a>
+            <a class="pagination-next">Next page</a>
+            <ul class="pagination-list"><li><a class="pagination-link" aria-label="Goto page 1">1</a></li>
+                <li><span class="pagination-ellipsis">…</span></li>
+                <li><a class="pagination-link" aria-label="Goto page 45">45</a></li>
+                <li><a class="pagination-link is-current" aria-label="Page 46" aria-current="page">46</a></li>
+                <li><a class="pagination-link" aria-label="Goto page 47">47</a></li>
+                <li><span class="pagination-ellipsis">…</span></li>
+                <li><a class="pagination-link" aria-label="Goto page 86">86</a></li></ul></nav>
+
+        <div class="has-background-dark"><p class="pl-3 pt-3 has-text-warning">
+                HTML
+            </p>
+
+            <figure class="highlight"><pre class="has-background-dark has-text-light" style="white-space: pre-line"><code data-lang="html"><span class="has-text-info">&lt;nav</span> <span class="has-text-warning">class=</span><span class="has-text-success">"pagination is-jumbo"</span> <span class="has-text-warning">role=</span><span class="has-text-success">"navigation"</span> <span class="has-text-warning">aria-label=</span><span class="has-text-success">"pagination"</span><span class="has-text-info">&gt;</span>
+                        <span class="has-text-info">&lt;a</span> <span class="has-text-warning">class=</span><span class="has-text-success">"pagination-previous"</span><span class="has-text-info">&gt;</span>Previous<span class="has-text-info">&lt;/a&gt;</span>
+                        <span class="has-text-info">&lt;a</span> <span class="has-text-warning">class=</span><span class="has-text-success">"pagination-next"</span><span class="has-text-info">&gt;</span>Next page<span class="has-text-info">&lt;/a&gt;</span>
+                        <span class="has-text-info">&lt;ul</span> <span class="has-text-warning">class=</span><span class="has-text-success">"pagination-list"</span><span class="has-text-info">&gt;</span>
+                        <span class="has-text-info">&lt;li&gt;&lt;a</span> <span class="has-text-warning">class=</span><span class="has-text-success">"pagination-link"</span> <span class="has-text-warning">aria-label=</span><span class="has-text-success">"Goto page 1"</span><span class="has-text-info">&gt;</span>1<span class="has-text-info">&lt;/a&gt;&lt;/li&gt;</span>
+                        <span class="has-text-info">&lt;li&gt;&lt;span</span> <span class="has-text-warning">class=</span><span class="has-text-success">"pagination-ellipsis"</span><span class="has-text-info">&gt;</span><span class="ni">&amp;hellip;</span><span class="has-text-info">&lt;/span&gt;&lt;/li&gt;</span>
+                        <span class="has-text-info">&lt;li&gt;&lt;a</span> <span class="has-text-warning">class=</span><span class="has-text-success">"pagination-link"</span> <span class="has-text-warning">aria-label=</span><span class="has-text-success">"Goto page 45"</span><span class="has-text-info">&gt;</span>45<span class="has-text-info">&lt;/a&gt;&lt;/li&gt;</span>
+                        <span class="has-text-info">&lt;li&gt;&lt;a</span> <span class="has-text-warning">class=</span><span class="has-text-success">"pagination-link is-current"</span> <span class="has-text-warning">aria-label=</span><span class="has-text-success">"Page 46"</span> <span class="has-text-warning">aria-current=</span><span class="has-text-success">"page"</span><span class="has-text-info">&gt;</span>46<span class="has-text-info">&lt;/a&gt;&lt;/li&gt;</span>
+                        <span class="has-text-info">&lt;li&gt;&lt;a</span> <span class="has-text-warning">class=</span><span class="has-text-success">"pagination-link"</span> <span class="has-text-warning">aria-label=</span><span class="has-text-success">"Goto page 47"</span><span class="has-text-info">&gt;</span>47<span class="has-text-info">&lt;/a&gt;&lt;/li&gt;</span>
+                        <span class="has-text-info">&lt;li&gt;&lt;span</span> <span class="has-text-warning">class=</span><span class="has-text-success">"pagination-ellipsis"</span><span class="has-text-info">&gt;</span><span class="ni">&amp;hellip;</span><span class="has-text-info">&lt;/span&gt;&lt;/li&gt;</span>
+                        <span class="has-text-info">&lt;li&gt;&lt;a</span> <span class="has-text-warning">class=</span><span class="has-text-success">"pagination-link"</span> <span class="has-text-warning">aria-label=</span><span class="has-text-success">"Goto page 86"</span><span class="has-text-info">&gt;</span>86<span class="has-text-info">&lt;/a&gt;&lt;/li&gt;</span>
+                        <span class="has-text-info">&lt;/ul&gt;</span>
+                        <span class="has-text-info">&lt;/nav&gt;</span></code></pre></figure></div></div></div>
+        </main>
+    </body>
+</html>

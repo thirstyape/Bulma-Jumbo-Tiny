@@ -1,0 +1,193 @@
+@import '../bulma/sass/utilities/mixins.sass'
+
+@import 'mixins'
+@import 'variables'
+
+// Shared
+.tag:not(body),
+.label,
+.file,
+.breadcrumb,
+.menu,
+.message,
+.pagination,
+.tabs
+  &.is-tiny
+    font-size: $size-tiny
+  &.is-jumbo
+    font-size: $size-jumbo
+
+// Elements
+.button
+  &.is-tiny
+    +button-tiny
+  &.is-jumbo
+    +button-jumbo
+
+.buttons
+  &.are-tiny
+    .button:not(.is-small):not(.is-normal):not(.is-medium):not(.is-large):not(.is-jumbo)
+      +button-tiny
+  &.are-small
+    .button:not(.is-tiny):not(.is-normal):not(.is-medium):not(.is-large):not(.is-jumbo)
+      +button-small
+  &.are-medium
+    .button:not(.is-tiny):not(.is-small):not(.is-normal):not(.is-large):not(.is-jumbo)
+      +button-medium
+  &.are-large
+    .button:not(.is-tiny):not(.is-small):not(.is-normal):not(.is-medium):not(.is-jumbo)
+      +button-large
+  &.are-jumbo
+    .button:not(.is-tiny):not(.is-small):not(.is-normal):not(.is-medium):not(.is-large)
+      +button-jumbo
+
+.delete
+  &.is-tiny
+    height: 11px
+    max-height: 11px
+    max-width: 11px
+    min-height: 11px
+    min-width: 11px
+    width: 11px
+  &.is-jumbo
+    height: 60px
+    max-height: 60px
+    max-width: 60px
+    min-height: 60px
+    min-width: 60px
+    width: 60px
+
+.icon
+  &.is-tiny
+    height: $icon-dimensions-tiny
+    width: $icon-dimensions-tiny
+  &.is-jumbo
+    height: $icon-dimensions-jumbo
+    width: $icon-dimensions-jumbo
+
+.progress
+  &.is-tiny
+    height: $size-tiny
+  &.is-jumbo
+    height: $size-jumbo
+
+.title,
+.subtitle
+  &.is-tiny
+    @each $size in $sizes-tiny
+      $i: index($sizes-tiny, $size)
+      &.is-#{$i}
+        font-size: $size
+  &.is-jumbo
+    @each $size in $sizes-jumbo
+      $i: index($sizes-jumbo, $size)
+      &.is-#{$i}
+        font-size: $size
+
+.tags
+  &.are-tiny
+    .tag:not(.is-normal):not(.is-medium):not(.is-large):not(.is-jumbo)
+      font-size: $size-tiny
+  &.are-medium
+    .tag:not(.is-tiny):not(.is-normal):not(.is-large):not(.is-jumbo)
+      font-size: $size-normal
+  &.are-large
+    .tag:not(.is-tiny):not(.is-normal):not(.is-medium):not(.is-jumbo)
+      font-size: $size-medium
+  &.are-jumbo
+    .tag:not(.is-tiny):not(.is-normal):not(.is-medium):not(.is-large)
+      font-size: $size-jumbo
+
+// Form
+.input,
+.select,
+.textarea
+  &.is-tiny
+    +control-tiny
+  &.is-jumbo
+    +control-jumbo
+
+.input
+  &.is-jumbo
+    border-radius: $radius-jumbo
+
+.select
+  &.is-loading
+    &.is-tiny:after
+      font-size: $size-tiny
+    &.is-jumbo:after
+      font-size: $size-jumbo
+
+.control
+  &.has-icons-left,
+  &.has-icons-right
+    .input,
+    .select
+      &.is-tiny ~ .icon
+        font-size: $size-tiny
+      &.is-jumbo ~ .icon
+        font-size: $size-jumbo
+  &.is-loading
+    &.is-tiny:after
+      font-size: $size-tiny
+    &.is-jumbo:after
+      font-size: $size-jumbo
+
+// Layout
+.hero
+  &.is-tiny
+    .hero-body
+      padding: $hero-body-padding-tiny
+  &.is-jumbo
+    +tablet
+      .hero-body
+        padding: $hero-body-padding-jumbo
+
+.section
+  +desktop
+    &.is-tiny
+      padding: $section-padding-tiny
+    &.is-jumbo
+      padding: $section-padding-jumbo
+
+// Helpers
+@each $property, $shortcut in $spacing-shortcuts
+  @each $name, $value in $spacing-values-tiny
+    // All directions
+    .#{$shortcut}-#{$name}-tiny
+      #{$property}: $value !important
+    // Cardinal directions
+    @each $direction, $suffix in $spacing-directions
+      .#{$shortcut}#{$suffix}-#{$name}-tiny
+        #{$property}-#{$direction}: $value !important
+    // Horizontal axis
+    @if $spacing-horizontal != null
+      .#{$shortcut}#{$spacing-horizontal}-#{$name}-tiny
+        #{$property}-left: $value !important
+        #{$property}-right: $value !important
+    // Vertical axis
+    @if $spacing-vertical != null
+      .#{$shortcut}#{$spacing-vertical}-#{$name}-tiny
+        #{$property}-top: $value !important
+        #{$property}-bottom: $value !important
+  @each $name, $value in $spacing-values-jumbo
+    // All directions
+    .#{$shortcut}-#{$name}-jumbo
+      #{$property}: $value !important
+    // Cardinal directions
+    @each $direction, $suffix in $spacing-directions
+      .#{$shortcut}#{$suffix}-#{$name}-jumbo
+        #{$property}-#{$direction}: $value !important
+    // Horizontal axis
+    @if $spacing-horizontal != null
+      .#{$shortcut}#{$spacing-horizontal}-#{$name}-jumbo
+        #{$property}-left: $value !important
+        #{$property}-right: $value !important
+    // Vertical axis
+    @if $spacing-vertical != null
+      .#{$shortcut}#{$spacing-vertical}-#{$name}-jumbo
+        #{$property}-top: $value !important
+        #{$property}-bottom: $value !important
+
++typography-size-tiny()
++typography-size-jumbo()

@@ -29,18 +29,20 @@ bld/
 
 # Visual Studio cache/options directory
 .vs/
+.vscode/
+*.code-workspace
 
 # MSTest test Results
 [Tt]est[Rr]esult*/
 [Bb]uild[Ll]og.*
 
-# Click-Once directory
+# Publish directories
+.config/
 [Pp]ublish/
 
 # Publish Web Output
 *.[Pp]ublish.xml
 *.azurePubxml
-*.pubxml
 *.publishproj
 
 # NuGet Packages
@@ -49,3 +51,21 @@ bld/
 # The packages folder can be ignored because of Package Restore except build/, which is used as an MSBuild target.
 **/[Pp]ackages/*
 !**/[Pp]ackages/build/
+
+# Ignore generated web files
+*/*/wwwroot/css/*
+*/*/wwwroot/js/*
+*/*/wwwroot/fonts/*
+*/*/wwwroot/*.json
+
+# Windows thumbnail file
+Thumbs.db
+
+# Apple directory info file
+.DS_Store
+
+# Temporary MS Office files
+~$*.xls*
+~$*.doc*
+*.~vsd*
+~$*.ppt*

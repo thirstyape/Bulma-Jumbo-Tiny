@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <base href=".">
+        <link href="../../css/bulma.min.css" rel="stylesheet">
+        <link href="../../css/bulma-jumbo-tiny.min.css" rel="stylesheet">
+        <link rel="icon" type="image/x-icon" href="../../favicon.ico">
+        <title>Tags - Bulma Jumbo Tiny</title>
+    </head>
+
+    <body>
+        <nav class="navbar is-dark" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand no-select">
+                <a href="../../../../index.html" class="navbar-item">Bulma Jumbo Tiny</a>
+                <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="demo-navigationmenu">
+                    <span aria-hidden="true"></span>
+		            <span aria-hidden="true"></span>
+		            <span aria-hidden="true"></span>
+                </a>
+            </div>
+            <div id="demo-navigationmenu" class="navbar-menu no-select">
+                <div class="navbar-start">
+                    <div class="navbar-item has-dropdown is-hoverable">
+                        <a class="navbar-link">Components</a>
+
+                        <div class="navbar-dropdown">
+                            <a href="../components/breadcrumb.html" class="navbar-item">Breadcrumb</a>
+                            <a href="../components/message.html" class="navbar-item">Message</a>
+                            <a href="../components/pagination.html" class="navbar-item">Pagination</a>
+                            <a href="../components/tabs.html" class="navbar-item">Tabs</a>
+                        </div>
+                    </div>
+
+                    <div class="navbar-item has-dropdown is-hoverable">
+                        <a class="navbar-link is-active">Elements</a>
+
+                        <div class="navbar-dropdown">
+                            <a href="button.html" class="navbar-item">Button</a>
+                            <a href="delete.html" class="navbar-item">Delete</a>
+                            <a href="progress.html" class="navbar-item">Progress</a>
+                            <a href="tag.html" class="navbar-item is-active">Tag</a>
+                            <a href="title.html" class="navbar-item">Title</a>
+                        </div>
+                    </div>
+
+                    <div class="navbar-item has-dropdown is-hoverable">
+                        <a class="navbar-link">Form</a>
+
+                        <div class="navbar-dropdown">
+                            <a href="../form/file.html" class="navbar-item">File</a>
+                            <a href="../form/input.html" class="navbar-item">Input</a>
+                            <a href="../form/textarea.html" class="navbar-item">Textarea</a>
+                            <a href="../form/select.html" class="navbar-item">Select</a>
+                        </div>
+                    </div>
+
+                    <div class="navbar-item has-dropdown is-hoverable">
+                        <a class="navbar-link">Helpers</a>
+
+                        <div class="navbar-dropdown">
+                            <a href="../helpers/spacing.html" class="navbar-item">Spacing</a>
+                            <a href="../helpers/typography.html" class="navbar-item">Typography</a>
+                        </div>
+                    </div>
+
+                    <div class="navbar-item has-dropdown is-hoverable">
+                        <a class="navbar-link">Layout</a>
+
+                        <div class="navbar-dropdown">
+                            <a href="../layout/hero.html" class="navbar-item">Hero</a>
+                            <a href="../layout/section.html" class="navbar-item">Section</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <main role="main" class="is-main-section">
+			<div class="container"><section class="hero"><div class="hero-body"><div class="container"><h1 class="title" tabindex="-1">
+					Tags
+				</h1>
+				<div class="subtitle is-4"><p>Small <strong>tag labels</strong> to insert anywhere</p></div></div></div></section>
+
+	<h3 class="title is-4 is-spaced">
+		Sizes
+	</h3>
+
+	<div class="columns is-multiline"><div class="column is-4"><div class="content"><p>
+					The tag comes in <strong>5 different</strong> sizes.
+				</p>
+				<p>
+					While the default size is the <strong>normal</strong> one, the <code>is-normal</code> modifier exists in case you need to reset the tag to its normal size.
+				</p></div></div>
+		<div class="column is-8 tags"><span class="tag is-success is-tiny">
+				Tiny
+			</span>
+			<span class="tag is-link is-normal">
+				Normal
+			</span>
+			<span class="tag is-primary is-medium">
+				Medium
+			</span>
+			<span class="tag is-info is-large">
+				Large
+			</span>
+			<span class="tag is-danger is-jumbo">
+				Jumbo
+			</span></div>
+		<div class="column is-12 has-background-dark"><p class="pl-3 pt-3 has-text-warning">
+				HTML
+			</p>
+
+			<figure><pre class="has-background-dark has-text-light" style="white-space: pre-line"><code data-lang="html"><span class="has-text-info">&lt;span</span> <span class="has-text-warning">class=</span><span class="has-text-success">"tag is-success is-tiny"</span><span class="has-text-info">&gt;</span>Tiny<span class="has-text-info">&lt;/span&gt;</span>
+						<span class="has-text-info">&lt;span</span> <span class="has-text-warning">class=</span><span class="has-text-success">"tag is-link is-normal"</span><span class="has-text-info">&gt;</span>Normal<span class="has-text-info">&lt;/span&gt;</span>
+						<span class="has-text-info">&lt;span</span> <span class="has-text-warning">class=</span><span class="has-text-success">"tag is-primary is-medium"</span><span class="has-text-info">&gt;</span>Medium<span class="has-text-info">&lt;/span&gt;</span>
+						<span class="has-text-info">&lt;span</span> <span class="has-text-warning">class=</span><span class="has-text-success">"tag is-info is-large"</span><span class="has-text-info">&gt;</span>Large<span class="has-text-info">&lt;/span&gt;</span>
+						<span class="has-text-info">&lt;span</span> <span class="has-text-warning">class=</span><span class="has-text-success">"tag is-danger is-jumbo"</span><span class="has-text-info">&gt;</span>Jumbo<span class="has-text-info">&lt;/span&gt;</span></code></pre></figure></div></div>
+
+	<div class="content"><p>
+			You can change the size of <strong>all</strong> tags at once:
+		</p></div>
+
+	<div class="mb-5"><p class="block"><span class="tag is-danger">Example</span>
+			<span class="tag is-info">Tiny</span></p>
+		<div class="tags are-tiny"><span class="tag">All</span>
+			<span class="tag">Tiny</span>
+			<span class="tag">Size</span></div>
+
+		<div class="has-background-dark"><p class="pl-3 pt-3 has-text-warning">
+				HTML
+			</p>
+
+			<figure><pre class="has-background-dark has-text-light" style="white-space: pre-line"><code data-lang="html"><span class="has-text-info">&lt;div</span> <span class="has-text-warning">class=</span><span class="has-text-success">"tags are-tiny"</span><span class="has-text-info">&gt;</span>
+						<span class="has-text-info">&lt;span</span> <span class="has-text-warning">class=</span><span class="has-text-success">"tag"</span><span class="has-text-info">&gt;</span>All<span class="has-text-info">&lt;/span&gt;</span>
+						<span class="has-text-info">&lt;span</span> <span class="has-text-warning">class=</span><span class="has-text-success">"tag"</span><span class="has-text-info">&gt;</span>Tiny<span class="has-text-info">&lt;/span&gt;</span>
+						<span class="has-text-info">&lt;span</span> <span class="has-text-warning">class=</span><span class="has-text-success">"tag"</span><span class="has-text-info">&gt;</span>Size<span class="has-text-info">&lt;/span&gt;</span>
+						<span class="has-text-info">&lt;/div&gt;</span></code></pre></figure></div></div>
+
+	<div class="mb-5"><p class="block"><span class="tag is-danger">Example</span>
+			<span class="tag is-info">Medium</span></p>
+		<div class="tags are-medium"><span class="tag">All</span>
+			<span class="tag">Medium</span>
+			<span class="tag">Size</span></div>
+
+		<div class="has-background-dark"><p class="pl-3 pt-3 has-text-warning">
+				HTML
+			</p>
+
+			<figure><pre class="has-background-dark has-text-light" style="white-space: pre-line"><code data-lang="html"><span class="has-text-info">&lt;div</span> <span class="has-text-warning">class=</span><span class="has-text-success">"tags are-medium"</span><span class="has-text-info">&gt;</span>
+						<span class="has-text-info">&lt;span</span> <span class="has-text-warning">class=</span><span class="has-text-success">"tag"</span><span class="has-text-info">&gt;</span>All<span class="has-text-info">&lt;/span&gt;</span>
+						<span class="has-text-info">&lt;span</span> <span class="has-text-warning">class=</span><span class="has-text-success">"tag"</span><span class="has-text-info">&gt;</span>Medium<span class="has-text-info">&lt;/span&gt;</span>
+						<span class="has-text-info">&lt;span</span> <span class="has-text-warning">class=</span><span class="has-text-success">"tag"</span><span class="has-text-info">&gt;</span>Size<span class="has-text-info">&lt;/span&gt;</span>
+						<span class="has-text-info">&lt;/div&gt;</span></code></pre></figure></div></div>
+
+	<div class="mb-5"><p class="block"><span class="tag is-danger">Example</span>
+			<span class="tag is-info">Large</span></p>
+		<div class="tags are-large"><span class="tag">All</span>
+			<span class="tag">Large</span>
+			<span class="tag">Size</span></div>
+
+		<div class="has-background-dark"><p class="pl-3 pt-3 has-text-warning">
+				HTML
+			</p>
+
+			<figure><pre class="has-background-dark has-text-light" style="white-space: pre-line"><code data-lang="html"><span class="has-text-info">&lt;div</span> <span class="has-text-warning">class=</span><span class="has-text-success">"tags are-large"</span><span class="has-text-info">&gt;</span>
+						<span class="has-text-info">&lt;span</span> <span class="has-text-warning">class=</span><span class="has-text-success">"tag"</span><span class="has-text-info">&gt;</span>All<span class="has-text-info">&lt;/span&gt;</span>
+						<span class="has-text-info">&lt;span</span> <span class="has-text-warning">class=</span><span class="has-text-success">"tag"</span><span class="has-text-info">&gt;</span>Large<span class="has-text-info">&lt;/span&gt;</span>
+						<span class="has-text-info">&lt;span</span> <span class="has-text-warning">class=</span><span class="has-text-success">"tag"</span><span class="has-text-info">&gt;</span>Size<span class="has-text-info">&lt;/span&gt;</span>
+						<span class="has-text-info">&lt;/div&gt;</span></code></pre></figure></div></div>
+
+	<div class="mb-5"><p class="block"><span class="tag is-danger">Example</span>
+			<span class="tag is-info">Jumbo</span></p>
+		<div class="tags are-jumbo"><span class="tag">All</span>
+			<span class="tag">Jumbo</span>
+			<span class="tag">Size</span></div>
+
+		<div class="has-background-dark"><p class="pl-3 pt-3 has-text-warning">
+				HTML
+			</p>
+
+			<figure><pre class="has-background-dark has-text-light" style="white-space: pre-line"><code data-lang="html"><span class="has-text-info">&lt;div</span> <span class="has-text-warning">class=</span><span class="has-text-success">"tags are-jumbo"</span><span class="has-text-info">&gt;</span>
+						<span class="has-text-info">&lt;span</span> <span class="has-text-warning">class=</span><span class="has-text-success">"tag"</span><span class="has-text-info">&gt;</span>All<span class="has-text-info">&lt;/span&gt;</span>
+						<span class="has-text-info">&lt;span</span> <span class="has-text-warning">class=</span><span class="has-text-success">"tag"</span><span class="has-text-info">&gt;</span>Jumbo<span class="has-text-info">&lt;/span&gt;</span>
+						<span class="has-text-info">&lt;span</span> <span class="has-text-warning">class=</span><span class="has-text-success">"tag"</span><span class="has-text-info">&gt;</span>Size<span class="has-text-info">&lt;/span&gt;</span>
+						<span class="has-text-info">&lt;/div&gt;</span></code></pre></figure></div></div></div>
+		</main>
+	</body>
+</html>

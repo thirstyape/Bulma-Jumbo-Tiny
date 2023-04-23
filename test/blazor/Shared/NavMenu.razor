@@ -1,0 +1,117 @@
+﻿<div class="navbar-brand no-select">
+    <NavLink href="" ActiveClass="is-active" class="navbar-item" Match="NavLinkMatch.All">Bulma Jumbo Tiny</NavLink>
+
+    <a role="button" class='@BurgerCssClass' aria-label="menu" aria-expanded="false" data-target="demo-navigationmenu" @onclick="ToggleMenu">
+		<span aria-hidden="true"></span>
+		<span aria-hidden="true"></span>
+		<span aria-hidden="true"></span>
+	</a>
+</div>
+<div id="demo-navigationmenu" class='@MenuCssClass'>
+	<div class="navbar-start">
+        <div class="navbar-item has-dropdown is-hoverable">
+            <a class="navbar-link">
+                Components
+            </a>
+
+            <div class="navbar-dropdown">
+                <NavLink href="breadcrumb" class="navbar-item">
+                    Breadcrumb
+                </NavLink>
+                <NavLink href="message" class="navbar-item">
+                    Message
+                </NavLink>
+                <NavLink href="pagination" class="navbar-item">
+                    Pagination
+                </NavLink>
+                <NavLink href="tabs" class="navbar-item">
+                    Tabs
+                </NavLink>
+            </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+            <a class="navbar-link">
+                Elements
+            </a>
+
+            <div class="navbar-dropdown">
+                <NavLink href="button" class="navbar-item">
+                    Button
+                </NavLink>
+                <NavLink href="delete" class="navbar-item">
+                    Delete
+                </NavLink>
+                <NavLink href="progress" class="navbar-item">
+                    Progress
+                </NavLink>
+                <NavLink href="tag" class="navbar-item">
+                    Tag
+                </NavLink>
+                <NavLink href="title" class="navbar-item">
+                    Title
+                </NavLink>
+            </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+            <a class="navbar-link">
+                Form
+            </a>
+
+            <div class="navbar-dropdown">
+                <NavLink href="file" class="navbar-item">
+                    File
+                </NavLink>
+                <NavLink href="input" class="navbar-item">
+                    Input
+                </NavLink>
+                <NavLink href="textarea" class="navbar-item">
+                    Textarea
+                </NavLink>
+                <NavLink href="select" class="navbar-item">
+                    Select
+                </NavLink>
+            </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+            <a class="navbar-link">
+                Helpers
+            </a>
+
+            <div class="navbar-dropdown">
+                <NavLink href="spacing" class="navbar-item">
+                    Spacing
+                </NavLink>
+                <NavLink href="typography" class="navbar-item">
+                    Typography
+                </NavLink>
+            </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+            <a class="navbar-link">
+                Layout
+            </a>
+
+            <div class="navbar-dropdown">
+                <NavLink href="hero" class="navbar-item">
+                    Hero
+                </NavLink>
+                <NavLink href="section" class="navbar-item">
+                    Section
+                </NavLink>
+            </div>
+        </div>
+	</div>
+</div>
+
+@code {
+    private bool IsExpanded;
+
+    private string MenuCssClass => IsExpanded ? "navbar-menu no-select is-active" : "navbar-menu no-select";
+    private string BurgerCssClass => IsExpanded ? "navbar-burger is-active" : "navbar-burger";
+
+    private void ToggleMenu()
+    {
+        IsExpanded = !IsExpanded;
+        StateHasChanged();
+    }
+}

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <base href=".">
+        <link href="../../css/bulma.min.css" rel="stylesheet">
+        <link href="../../css/bulma-jumbo-tiny.min.css" rel="stylesheet">
+        <link rel="icon" type="image/x-icon" href="../../favicon.ico">
+        <title>Tabs - Bulma Jumbo Tiny</title>
+    </head>
+
+    <body>
+        <nav class="navbar is-dark" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand no-select">
+                <a href="../../../../index.html" class="navbar-item">Bulma Jumbo Tiny</a>
+                <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="demo-navigationmenu">
+                    <span aria-hidden="true"></span>
+		            <span aria-hidden="true"></span>
+		            <span aria-hidden="true"></span>
+                </a>
+            </div>
+            <div id="demo-navigationmenu" class="navbar-menu no-select">
+                <div class="navbar-start">
+                    <div class="navbar-item has-dropdown is-hoverable">
+                        <a class="navbar-link is-active">Components</a>
+
+                        <div class="navbar-dropdown">
+                            <a href="breadcrumb.html" class="navbar-item">Breadcrumb</a>
+                            <a href="message.html" class="navbar-item">Message</a>
+                            <a href="pagination.html" class="navbar-item">Pagination</a>
+                            <a href="tabs.html" class="navbar-item is-active">Tabs</a>
+                        </div>
+                    </div>
+
+                    <div class="navbar-item has-dropdown is-hoverable">
+                        <a class="navbar-link">Elements</a>
+
+                        <div class="navbar-dropdown">
+                            <a href="../elements/button.html" class="navbar-item">Button</a>
+                            <a href="../elements/delete.html" class="navbar-item">Delete</a>
+                            <a href="../elements/progress.html" class="navbar-item">Progress</a>
+                            <a href="../elements/tag.html" class="navbar-item">Tag</a>
+                            <a href="../elements/title.html" class="navbar-item">Title</a>
+                        </div>
+                    </div>
+
+                    <div class="navbar-item has-dropdown is-hoverable">
+                        <a class="navbar-link">Form</a>
+
+                        <div class="navbar-dropdown">
+                            <a href="../form/file.html" class="navbar-item">File</a>
+                            <a href="../form/input.html" class="navbar-item">Input</a>
+                            <a href="../form/textarea.html" class="navbar-item">Textarea</a>
+                            <a href="../form/select.html" class="navbar-item">Select</a>
+                        </div>
+                    </div>
+
+                    <div class="navbar-item has-dropdown is-hoverable">
+                        <a class="navbar-link">Helpers</a>
+
+                        <div class="navbar-dropdown">
+                            <a href="../helpers/spacing.html" class="navbar-item">Spacing</a>
+                            <a href="../helpers/typography.html" class="navbar-item">Typography</a>
+                        </div>
+                    </div>
+
+                    <div class="navbar-item has-dropdown is-hoverable">
+                        <a class="navbar-link">Layout</a>
+
+                        <div class="navbar-dropdown">
+                            <a href="../layout/hero.html" class="navbar-item">Hero</a>
+                            <a href="../layout/section.html" class="navbar-item">Section</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <main role="main" class="is-main-section">
+            <div class="container"><section class="hero"><div class="hero-body"><div class="container"><h1 class="title" tabindex="-1">
+                    Tabs
+                </h1>
+                <div class="subtitle is-4"><p>Simple responsive horizontal navigation <strong>tabs</strong>, with different styles</p></div></div></div></section>
+
+    <h3 class="title is-4 is-spaced">
+        Sizes
+    </h3>
+
+    <div class="content"><p>You can choose between <strong>5 additional sizes</strong>: <code>is-tiny</code>, <code>is-small</code>, <code>is-medium</code>, <code>is-large</code>, and <code>is-jumbo</code>.</p></div>
+
+    <div class="mb-5"><p class="block"><span class="tag is-danger">Example</span>
+            <span class="tag is-info">Tiny</span></p>
+
+        <div class="tabs is-tiny"><ul><li class="is-active"><a>Pictures</a></li>
+                <li><a>Music</a></li>
+                <li><a>Videos</a></li>
+                <li><a>Documents</a></li></ul></div>
+
+        <div class="has-background-dark"><p class="pl-3 pt-3 has-text-warning">
+                HTML
+            </p>
+
+            <figure><pre class="has-background-dark has-text-light" style="white-space: pre-line"><code data-lang="html"><span class="has-text-info">&lt;div</span> <span class="has-text-warning">class=</span><span class="has-text-success">"tabs is-tiny"</span><span class="has-text-info">&gt;</span>
+                    <span class="has-text-info">&lt;ul&gt;</span>
+                    <span class="has-text-info">&lt;li</span> <span class="has-text-warning">class=</span><span class="has-text-success">"is-active"</span><span class="has-text-info">&gt;&lt;a&gt;</span>Pictures<span class="has-text-info">&lt;/a&gt;&lt;/li&gt;</span>
+                    <span class="has-text-info">&lt;li&gt;&lt;a&gt;</span>Music<span class="has-text-info">&lt;/a&gt;&lt;/li&gt;</span>
+                    <span class="has-text-info">&lt;li&gt;&lt;a&gt;</span>Videos<span class="has-text-info">&lt;/a&gt;&lt;/li&gt;</span>
+                    <span class="has-text-info">&lt;li&gt;&lt;a&gt;</span>Documents<span class="has-text-info">&lt;/a&gt;&lt;/li&gt;</span>
+                    <span class="has-text-info">&lt;/ul&gt;</span>
+                    <span class="has-text-info">&lt;/div&gt;</span></code></pre></figure></div></div>
+    
+    <div class="mb-5"><p class="block"><span class="tag is-danger">Example</span>
+            <span class="tag is-info">Small</span></p>
+
+        <div class="tabs is-small"><ul><li class="is-active"><a>Pictures</a></li>
+                <li><a>Music</a></li>
+                <li><a>Videos</a></li>
+                <li><a>Documents</a></li></ul></div>
+
+        <div class="has-background-dark"><p class="pl-3 pt-3 has-text-warning">
+                HTML
+            </p>
+
+            <figure><pre class="has-background-dark has-text-light" style="white-space: pre-line"><code data-lang="html"><span class="has-text-info">&lt;div</span> <span class="has-text-warning">class=</span><span class="has-text-success">"tabs is-small"</span><span class="has-text-info">&gt;</span>
+                    <span class="has-text-info">&lt;ul&gt;</span>
+                    <span class="has-text-info">&lt;li</span> <span class="has-text-warning">class=</span><span class="has-text-success">"is-active"</span><span class="has-text-info">&gt;&lt;a&gt;</span>Pictures<span class="has-text-info">&lt;/a&gt;&lt;/li&gt;</span>
+                    <span class="has-text-info">&lt;li&gt;&lt;a&gt;</span>Music<span class="has-text-info">&lt;/a&gt;&lt;/li&gt;</span>
+                    <span class="has-text-info">&lt;li&gt;&lt;a&gt;</span>Videos<span class="has-text-info">&lt;/a&gt;&lt;/li&gt;</span>
+                    <span class="has-text-info">&lt;li&gt;&lt;a&gt;</span>Documents<span class="has-text-info">&lt;/a&gt;&lt;/li&gt;</span>
+                    <span class="has-text-info">&lt;/ul&gt;</span>
+                    <span class="has-text-info">&lt;/div&gt;</span></code></pre></figure></div></div>
+    
+    <div class="mb-5"><p class="block"><span class="tag is-danger">Example</span>
+            <span class="tag is-info">Medium</span></p>
+
+        <div class="tabs is-medium"><ul><li class="is-active"><a>Pictures</a></li>
+                <li><a>Music</a></li>
+                <li><a>Videos</a></li>
+                <li><a>Documents</a></li></ul></div>
+
+        <div class="has-background-dark"><p class="pl-3 pt-3 has-text-warning">
+                HTML
+            </p>
+
+            <figure><pre class="has-background-dark has-text-light" style="white-space: pre-line"><code data-lang="html"><span class="has-text-info">&lt;div</span> <span class="has-text-warning">class=</span><span class="has-text-success">"tabs is-medium"</span><span class="has-text-info">&gt;</span>
+                    <span class="has-text-info">&lt;ul&gt;</span>
+                    <span class="has-text-info">&lt;li</span> <span class="has-text-warning">class=</span><span class="has-text-success">"is-active"</span><span class="has-text-info">&gt;&lt;a&gt;</span>Pictures<span class="has-text-info">&lt;/a&gt;&lt;/li&gt;</span>
+                    <span class="has-text-info">&lt;li&gt;&lt;a&gt;</span>Music<span class="has-text-info">&lt;/a&gt;&lt;/li&gt;</span>
+                    <span class="has-text-info">&lt;li&gt;&lt;a&gt;</span>Videos<span class="has-text-info">&lt;/a&gt;&lt;/li&gt;</span>
+                    <span class="has-text-info">&lt;li&gt;&lt;a&gt;</span>Documents<span class="has-text-info">&lt;/a&gt;&lt;/li&gt;</span>
+                    <span class="has-text-info">&lt;/ul&gt;</span>
+                    <span class="has-text-info">&lt;/div&gt;</span></code></pre></figure></div></div>
+    
+    <div class="mb-5"><p class="block"><span class="tag is-danger">Example</span>
+            <span class="tag is-info">Large</span></p>
+
+        <div class="tabs is-large"><ul><li class="is-active"><a>Pictures</a></li>
+                <li><a>Music</a></li>
+                <li><a>Videos</a></li>
+                <li><a>Documents</a></li></ul></div>
+
+        <div class="has-background-dark"><p class="pl-3 pt-3 has-text-warning">
+                HTML
+            </p>
+
+            <figure><pre class="has-background-dark has-text-light" style="white-space: pre-line"><code data-lang="html"><span class="has-text-info">&lt;div</span> <span class="has-text-warning">class=</span><span class="has-text-success">"tabs is-large"</span><span class="has-text-info">&gt;</span>
+                    <span class="has-text-info">&lt;ul&gt;</span>
+                    <span class="has-text-info">&lt;li</span> <span class="has-text-warning">class=</span><span class="has-text-success">"is-active"</span><span class="has-text-info">&gt;&lt;a&gt;</span>Pictures<span class="has-text-info">&lt;/a&gt;&lt;/li&gt;</span>
+                    <span class="has-text-info">&lt;li&gt;&lt;a&gt;</span>Music<span class="has-text-info">&lt;/a&gt;&lt;/li&gt;</span>
+                    <span class="has-text-info">&lt;li&gt;&lt;a&gt;</span>Videos<span class="has-text-info">&lt;/a&gt;&lt;/li&gt;</span>
+                    <span class="has-text-info">&lt;li&gt;&lt;a&gt;</span>Documents<span class="has-text-info">&lt;/a&gt;&lt;/li&gt;</span>
+                    <span class="has-text-info">&lt;/ul&gt;</span>
+                    <span class="has-text-info">&lt;/div&gt;</span></code></pre></figure></div></div>
+    
+    <div class="mb-5"><p class="block"><span class="tag is-danger">Example</span>
+            <span class="tag is-info">Jumbo</span></p>
+
+        <div class="tabs is-jumbo"><ul><li class="is-active"><a>Pictures</a></li>
+                <li><a>Music</a></li>
+                <li><a>Videos</a></li>
+                <li><a>Documents</a></li></ul></div>
+
+        <div class="has-background-dark"><p class="pl-3 pt-3 has-text-warning">
+                HTML
+            </p>
+
+            <figure><pre class="has-background-dark has-text-light" style="white-space: pre-line"><code data-lang="html"><span class="has-text-info">&lt;div</span> <span class="has-text-warning">class=</span><span class="has-text-success">"tabs is-jumbo"</span><span class="has-text-info">&gt;</span>
+                    <span class="has-text-info">&lt;ul&gt;</span>
+                    <span class="has-text-info">&lt;li</span> <span class="has-text-warning">class=</span><span class="has-text-success">"is-active"</span><span class="has-text-info">&gt;&lt;a&gt;</span>Pictures<span class="has-text-info">&lt;/a&gt;&lt;/li&gt;</span>
+                    <span class="has-text-info">&lt;li&gt;&lt;a&gt;</span>Music<span class="has-text-info">&lt;/a&gt;&lt;/li&gt;</span>
+                    <span class="has-text-info">&lt;li&gt;&lt;a&gt;</span>Videos<span class="has-text-info">&lt;/a&gt;&lt;/li&gt;</span>
+                    <span class="has-text-info">&lt;li&gt;&lt;a&gt;</span>Documents<span class="has-text-info">&lt;/a&gt;&lt;/li&gt;</span>
+                    <span class="has-text-info">&lt;/ul&gt;</span>
+                    <span class="has-text-info">&lt;/div&gt;</span></code></pre></figure></div></div></div>
+        </main>
+    </body>
+</html>

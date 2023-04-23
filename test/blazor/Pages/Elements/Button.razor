@@ -1,0 +1,140 @@
+﻿@page "/button"
+
+<PageTitle>Button - Bulma Jumbo Tiny</PageTitle>
+
+<div class="container">
+    <section class="hero">
+        <div class="hero-body">
+            <div class="container">    
+                <h1 class="title">
+                    Button
+                </h1>
+                <div class="subtitle is-4">
+                    <p>The classic <strong>button</strong> with additional sizes</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <h3 class="title is-4 is-spaced">
+        Sizes
+    </h3>
+
+    <div class="content">
+        <p>
+            The button comes in <strong>6 different sizes:</strong>
+        </p>
+        <ul>
+            <li>
+                tiny
+            </li>
+            <li>
+                small
+            </li>
+            <li>
+                normal
+            </li>
+            <li>
+                medium
+            </li>
+            <li>
+                large
+            </li>
+            <li>
+                jumbo
+            </li>
+        </ul>
+        <p>
+            While the default size is the <strong>normal</strong> one, the <code>is-normal</code> modifier exists in case you need to reset the button to its normal size.
+        </p>
+    </div>
+
+    <div class="mb-5">
+        <p class="block">
+            <span class="tag is-danger">Example</span>
+        </p>
+
+        <div class="buttons">
+            <button type="button" class="button is-tiny">Tiny</button>
+            <button type="button" class="button is-small">Small</button>
+            <button type="button" class="button">Default</button>
+            <button type="button" class="button is-normal">Normal</button>
+            <button type="button" class="button is-medium">Medium</button>
+            <button type="button" class="button is-large">Large</button>
+            <button type="button" class="button is-jumbo">Jumbo</button>
+        </div>
+    </div>
+
+    <div class="has-background-dark mb-5">
+        <p class="pl-3 pt-3 has-text-warning">
+            HTML
+        </p>
+
+        <figure>
+            <pre class="has-background-dark has-text-light" style="white-space: pre-line">
+                <code data-lang="html">
+                    <span class="has-text-info">&lt;button</span> <span class="has-text-warning">class=</span><span class="has-text-success">"button is-tiny"</span><span class="has-text-info">&gt;</span>Tiny<span class="has-text-info">&lt;/button&gt;</span>
+                    <span class="has-text-info">&lt;button</span> <span class="has-text-warning">class=</span><span class="has-text-success">"button is-small"</span><span class="has-text-info">&gt;</span>Small<span class="has-text-info">&lt;/button&gt;</span>
+                    <span class="has-text-info">&lt;button</span> <span class="has-text-warning">class=</span><span class="has-text-success">"button"</span><span class="has-text-info">&gt;</span>Default<span class="has-text-info">&lt;/button&gt;</span>
+                    <span class="has-text-info">&lt;button</span> <span class="has-text-warning">class=</span><span class="has-text-success">"button is-normal"</span><span class="has-text-info">&gt;</span>Normal<span class="has-text-info">&lt;/button&gt;</span>
+                    <span class="has-text-info">&lt;button</span> <span class="has-text-warning">class=</span><span class="has-text-success">"button is-medium"</span><span class="has-text-info">&gt;</span>Medium<span class="has-text-info">&lt;/button&gt;</span>
+                    <span class="has-text-info">&lt;button</span> <span class="has-text-warning">class=</span><span class="has-text-success">"button is-large"</span><span class="has-text-info">&gt;</span>Large<span class="has-text-info">&lt;/button&gt;</span>
+                    <span class="has-text-info">&lt;button</span> <span class="has-text-warning">class=</span><span class="has-text-success">"button is-jumbo"</span><span class="has-text-info">&gt;</span>Jumbo<span class="has-text-info">&lt;/button&gt;</span>
+                </code>
+            </pre>
+        </figure>
+    </div>
+
+    <div class="content mb-5">
+        <p>
+            You can change the size of <strong>multiple buttons</strong> at once by wrapping them in a <code>buttons</code> parent, and applying one of 5 modifiers:
+        </p>
+        <ul>
+            <li>
+                <code>buttons are-tiny</code>
+            </li>
+            <li>
+                <code>buttons are-small</code>
+            </li>
+            <li>
+                <code>buttons are-medium</code>
+            </li>
+            <li>
+                <code>buttons are-large</code>
+            </li>
+            <li>
+                <code>buttons are-jumbo</code>
+            </li>
+        </ul>
+    </div>
+
+    <div class="mb-5">
+        <p class="block">
+            <span class="tag is-danger">Example</span>
+        </p>
+
+        <div class="buttons are-medium">
+            <button type="button" class="button">All</button>
+            <button type="button" class="button">Medium</button>
+            <button type="button" class="button">Size</button>
+        </div>
+    </div>
+
+    <div class="has-background-dark mb-5">
+        <p class="pl-3 pt-3 has-text-warning">
+            HTML
+        </p>
+
+        <figure>
+            <pre class="has-background-dark has-text-light" style="white-space: pre-line">
+                <code data-lang="html">
+                    <span class="has-text-info">&lt;div</span> <span class="has-text-warning">class=</span><span class="has-text-success">"buttons are-medium"</span><span class="has-text-info">&gt;</span>
+                    <span class="has-text-info">&lt;button</span> <span class="has-text-warning">class=</span><span class="has-text-success">"button"</span><span class="has-text-info">&gt;</span>All<span class="has-text-info">&lt;/button&gt;</span>
+                    <span class="has-text-info">&lt;button</span> <span class="has-text-warning">class=</span><span class="has-text-success">"button"</span><span class="has-text-info">&gt;</span>Medium<span class="has-text-info">&lt;/button&gt;</span>
+                    <span class="has-text-info">&lt;button</span> <span class="has-text-warning">class=</span><span class="has-text-success">"button"</span><span class="has-text-info">&gt;</span>Size<span class="has-text-info">&lt;/button&gt;</span>
+                    <span class="has-text-info">&lt;/div&gt;</span>
+                </code>
+            </pre>
+        </figure>
+    </div>
+</div>

@@ -1,0 +1,136 @@
+﻿@page "/spacing"
+
+<PageTitle>Spacing - Bulma Jumbo Tiny</PageTitle>
+
+<div class="container">
+    <section class="hero">
+        <div class="hero-body">
+            <div class="container">
+                <h1 class="title">
+                    Spacing helpers
+                </h1>
+                <div class="subtitle is-4">
+                    <p>Change the <strong>size</strong> and <strong>color</strong> of the text for one or multiple viewport width</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="content">
+        <p>Bulma provides <strong>margin</strong> <code>m*</code> and <strong>padding</strong> <code>p*</code> helpers in all <strong>directions</strong>:</p>
+
+        <ul>
+            <li>
+                <code>*t</code> for <strong>top</strong>
+            </li>
+            <li>
+                <code>*r</code> for <strong>right</strong>
+            </li>
+            <li>
+                <code>*b</code> for <strong>bottom</strong>
+            </li>
+            <li>
+                <code>*l</code> for <strong>left</strong>
+            </li>
+            <li>
+                <code>*x</code> horizontally for both <strong>left</strong> and <strong>right</strong>
+            </li>
+            <li>
+                <code>*y</code> vertically for both <strong>top</strong> and <strong>bottom</strong>
+            </li>
+        </ul>
+
+        <p>
+            You need to <strong>combine</strong> a margin/padding prefix with a direction suffix. For example:
+        </p>
+
+        <ul>
+            <li>for a <code>margin-top</code>, use <code>mt-*</code></li>
+            <li>for a <code>padding-bottom</code>, use <code>pb-*</code></li>
+            <li>for both <code>margin-left</code> and <code>margin-right</code>, use <code>mx-*</code></li>
+        </ul>
+
+        <p>
+            Each of these <code>property-direction</code> <strong>combinations</strong> needs to be appended with one of <strong>19 value suffixes</strong>:
+        </p>
+    </div>
+
+    <table class="table is-bordered mb-5">
+        <thead>
+            <tr>
+                <th>Suffix</th>
+                <th>Tiny</th>
+                <th>Default</th>
+                <th>Jumbo</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><code>*-0</code></td>
+                <td></td>
+                <td><code>0</code></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>
+                    Tiny <code>*-1-tiny</code><br />
+                    Default <code>*-1</code><br />
+                    Jumbo <code>*-1-jumbo</code>
+                </td>
+                <td><code>0.025rem</code></td>
+                <td><code>0.25rem</code></td>
+                <td><code>3rem</code></td>
+            </tr>
+            <tr>
+                <td>
+                    Tiny <code>*-2-tiny</code><br />
+                    Default <code>*-2</code><br />
+                    Jumbo <code>*-2-jumbo</code>
+                </td>
+                <td><code>0.05rem</code></td>
+                <td><code>0.5rem</code></td>
+                <td><code>3.5rem</code></td>
+            </tr>
+            <tr>
+                <td>
+                    Tiny <code>*-3-tiny</code><br />
+                    Default <code>*-3</code><br />
+                    Jumbo <code>*-3-jumbo</code>
+                </td>
+                <td><code>0.10rem</code></td>
+                <td><code>0.75rem</code></td>
+                <td><code>4rem</code></td>
+            </tr>
+            <tr>
+                <td>
+                    Tiny <code>*-4-tiny</code><br />
+                    Default <code>*-4</code><br />
+                    Jumbo <code>*-4-jumbo</code>
+                </td>
+                <td><code>0.15rem</code></td>
+                <td><code>1rem</code></td>
+                <td><code>5rem</code></td>
+            </tr>
+            <tr>
+                <td>
+                    Tiny <code>*-5-tiny</code><br />
+                    Default <code>*-5</code><br />
+                    Jumbo <code>*-5-jumbo</code>
+                </td>
+                <td><code>0.20rem</code></td>
+                <td><code>1.5rem</code></td>
+                <td><code>6rem</code></td>
+            </tr>
+            <tr>
+                <td>
+                    Tiny <code>*-6-tiny</code><br />
+                    Default <code>*-6</code><br />
+                    Jumbo <code>*-6-jumbo</code>
+                </td>
+                <td><code>0.25rem</code></td>
+                <td><code>3rem</code></td>
+                <td><code>7rem</code></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
