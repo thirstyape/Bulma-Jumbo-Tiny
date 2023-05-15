@@ -1,5 +1,7 @@
 # Bulma Jumbo Tiny
 
+[![MIT](https://img.shields.io/github/license/thirstyape/Bulma-Jumbo-Tiny)](https://github.com/thirstyape/Bulma-Jumbo-Tiny/blob/master/LICENSE)
+
 This library is an extension to the [Bulma CSS Framework](https://bulma.io). 
 
 The purpose of this library is to provide additional sizing options that are simple to use and work with the existing bulma tags.
