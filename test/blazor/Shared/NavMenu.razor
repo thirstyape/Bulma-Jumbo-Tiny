@@ -1,4 +1,4 @@
-﻿<div class="navbar-brand no-select">
+﻿<div class="navbar-brand is-unselectable">
     <NavLink href="" ActiveClass="is-active" class="navbar-item" Match="NavLinkMatch.All">Bulma Jumbo Tiny</NavLink>
 
     <a role="button" class='@BurgerCssClass' aria-label="menu" aria-expanded="false" data-target="demo-navigationmenu" @onclick="ToggleMenu">
@@ -106,7 +106,7 @@
 @code {
     private bool IsExpanded;
 
-    private string MenuCssClass => IsExpanded ? "navbar-menu no-select is-active" : "navbar-menu no-select";
+    private string MenuCssClass => IsExpanded ? "navbar-menu is-unselectable is-active" : "navbar-menu is-unselectable";
     private string BurgerCssClass => IsExpanded ? "navbar-burger is-active" : "navbar-burger";
 
     private void ToggleMenu()
